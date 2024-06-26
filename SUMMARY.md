@@ -2,11 +2,12 @@
 
 * [Introductie](README.md)
 
-## Tooling
+## Tools
 
-* [Devcontainers](tooling/devcontainers.md)
-* [Git](tooling/git.md)
-* [Terminal en bash](tooling/bash.md)
+* [Tools](tooling/tooling.md)
+  * [Devcontainers](tooling/devcontainers/devcontainers.md)
+  * [Git](tooling/git/git.md)
+  * [Terminal en bash](tooling/bash/bash.md)
 
 ## Cursus
 
