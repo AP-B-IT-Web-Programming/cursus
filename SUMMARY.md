@@ -8,66 +8,36 @@
 * [Git](tooling/git.md)
 * [Terminal en bash](tooling/bash.md)
 
-## NodeJS + TypeScript
+## Cursus
 
-* [Wat is NodeJS?](nodejs-+-typescript/wat-is-nodejs.md)
-* [Waarom TypeScript?](nodejs-+-typescript/waarom-typescript.md)
-* [Nieuw project](nodejs-+-typescript/projectmaken.md)
-* [Input lezen](nodejs-+-typescript/input-lezen.md)
-* [Type Systeem](nodejs-+-typescript/type-systeem/README.md)
-  * [Basic types](nodejs-+-typescript/type-systeem/basic-types.md)
-  * [Arrays](nodejs-+-typescript/type-systeem/arrays.md)
-  * [Interfaces](nodejs-+-typescript/type-systeem/interfaces.md)
-  * [Functions](nodejs-+-typescript/type-systeem/functions.md)
-* [Exceptions](nodejs-+-typescript/exceptions.md)
-* [Modules](nodejs-+-typescript/modules.md)
-* [Asynchroon Programmeren](nodejs-+-typescript/asynchroon-programmeren/README.md)
-  * [Promises](nodejs-+-typescript/asynchroon-programmeren/promises.md)
-  * [Async/Await](nodejs-+-typescript/asynchroon-programmeren/async-await.md)
-  * [Fetch](nodejs-+-typescript/asynchroon-programmeren/fetch.md)
-
-## Express.js
-
-* [Wat is een backend framework?](express.js/wat-is-een-backend-framework.md)
-* [Basis](express.js/basis.md)
-* [Nodemon](express.js/nodemon.md)
-* [Statische Bestanden](express.js/statische-bestanden.md)
-* [EJS](express.js/ejs.md)
-* [Request](express.js/requests/README.md)
-  * [GET Request](express.js/requests/get-request.md)
-  * [POST Request](express.js/requests/post-request.md)
-  * [Multi-part form data](express.js/requests/multi-part-form-data.md)
-* [Response](express.js/response.md)
-* [Router](express.js/router.md)
-* [Middleware](express.js/middleware.md)
-* [Deployment](express.js/deployment.md)
-
-## MongoDB
-
-* [Wat is MongoDB?](mongodb/wat-is-mongodb.md)
-* [MongoDB driver](mongodb/mongodb-driver.md)
-* [Insert](mongodb/insert.md)
-* [Find](mongodb/find.md)
-* [Limit & Sort](mongodb/limit-and-sort.md)
-* [Query Operators](mongodb/query-operators.md)
-* [Update](mongodb/update.md)
-* [Delete](mongodb/delete.md)
-* [Text Search](mongodb/text-search.md)
-* [Gebruik in Express.js](mongodb/gebruik-in-express.js.md)
-  * [CRUD](mongodb/CRUD.md)
-
-## Security & Testing
-
-* [Environment Variables](security-and-testing/environment-variables.md)
-* [Cookies](security-and-testing/cookies.md)
-* [Hashing & Encryptie](security-and-testing/hashing-encryption.md)
-* [Sessions](security-and-testing/sessions.md)
-  * [Session Based Login](security-and-testing/session-based-login.md)
-* [JWT Tokens](security-and-testing/jwt-tokens/README.md)
-  * [JWT NPM package](security-and-testing/jwt-tokens/jwt-npm-package.md)
-  * [Tokens veilig opslaan](security-and-testing/jwt-tokens/tokens-veilig-opslaan.md)
-  * [Token Based Login](security-and-testing/jwt-tokens/token-based-login.md)
-* [Testing](security-and-testing/testing.md)
+* [NodeJS + TypeScript](cursus/nodejs-+-typescript/wat-is-nodejs.md)
+  * [Waarom TypeScript?](cursus/nodejs-+-typescript/waarom-typescript.md)
+  * [Nieuw project](cursus/nodejs-+-typescript/projectmaken.md)
+  * [Input lezen](cursus/nodejs-+-typescript/input-lezen.md)
+  * [Type Systeem](cursus/nodejs-+-typescript/type-systeem/README.md)
+    * [Basic types](cursus/nodejs-+-typescript/type-systeem/basic-types.md)
+    * [Arrays](cursus/nodejs-+-typescript/type-systeem/arrays.md)
+    * [Interfaces](cursus/nodejs-+-typescript/type-systeem/interfaces.md)
+    * [Functions](cursus/nodejs-+-typescript/type-systeem/functions.md)
+  * [Exceptions](cursus/nodejs-+-typescript/exceptions.md)
+  * [Modules](cursus/nodejs-+-typescript/modules.md)
+  * [Asynchroon Programmeren](cursus/nodejs-+-typescript/asynchroon-programmeren/README.md)
+    * [Promises](cursus/nodejs-+-typescript/asynchroon-programmeren/promises.md)
+    * [Async/Await](cursus/nodejs-+-typescript/asynchroon-programmeren/async-await.md)
+    * [Fetch](cursus/nodejs-+-typescript/asynchroon-programmeren/fetch.md)
+* [Express.js](cursus/express.js/wat-is-een-backend-framework.md)
+  * [Basis](cursus/express.js/basis.md)
+  * [Nodemon](cursus/express.js/nodemon.md)
+  * [Statische Bestanden](cursus/express.js/statische-bestanden.md)
+  * [EJS](cursus/express.js/ejs.md)
+  * [Request](cursus/express.js/requests/README.md)
+    * [GET Request](cursus/express.js/requests/get-request.md)
+    * [POST Request](cursus/express.js/requests/post-request.md)
+    * [Multi-part form data](cursus/express.js/requests/multi-part-form-data.md)
+  * [Response](cursus/express.js/response.md)
+  * [Router](cursus/express.js/router.md)
+  * [Middleware](cursus/express.js/middleware.md)
+  * [Deployment](cursus/express.js/deployment.md)
 
 ## Labos
 
@@ -177,11 +147,3 @@
 * [Extra oefeningen](labos/extra/README.md)
   * [DNA Match](exercises/node-typescript/dna-match/README.md)
   * [View Counter](exercises/express/viewcounter/README.md)
-
-## Project
-
-* [Voorbereiding](project/dev-container.md)
-* [Milestone 1 - Terminal App](project/node-client.md)
-* [Milestone 2 - Express](project/milestone-2-express.md)
-* [Milestone 3 - MongoDB](project/milestone-3-mongodb.md)
-* [Milestone 4 - Security](project/milestone-4-security.md)

@@ -1,9 +1,9 @@
 [book]
-authors = ["Andie Similon"]
-language = "en"
+authors = ["Andie Similon, Sam Van Battel, Jeroen De Vos, David Verhulst"]
+language = "be-nl"
 multilingual = false
 src = "."
-title = "Webontwikkeling"
+title = "Web Programming"
 [output.html.fold]
 enable = true
 
