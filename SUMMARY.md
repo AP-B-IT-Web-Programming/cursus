@@ -5,9 +5,9 @@
 ## Tools
 
 * [Tools](tooling/tooling.md)
-  * [Devcontainers](tooling/devcontainers/devcontainers.md)
-  * [Git](tooling/git/git.md)
-  * [Terminal en bash](tooling/bash/bash.md)
+  * [Devcontainers](tooling/devcontainers.md)
+  * [Git](tooling/git.md)
+  * [Terminal en bash](tooling/bash.md)
 
 ## Cursus
 
