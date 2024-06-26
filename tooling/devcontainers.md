@@ -1,6 +1,6 @@
 # Devcontainers
 
-{% embed url="https://www.youtube.com/watch?v=Z7bCqFxC5cM" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7bCqFxC5cM?si=YbXKr0PpT8psTOIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 {% hint style="danger" %}
 In het filmpje wordt er gebruik gemaakt van `wsl --install` om wsl te installeren. Gebruik in de plaats `wsl --install --no-distribution` want anders zal deze ook Ubuntu installeren.
