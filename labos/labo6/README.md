@@ -1,10 +1,18 @@
-# 6. Modules en NPM Packages
+# 5. TS: Modules & NPM
 
+{% hint style="info" %}
 ## Theorie
 
 Bekijk voor het labo aan te vangen eerst de volgende topics:
 
 * [Modules](../../nodejs-+-typescript/modules.md)
+{% endhint %}
+
+## Oefeningen
+
+### Voorbereiding
+
+Maak een nieuwe directory `labo5` aan in de root van je project.
 
 ### Math Module
 

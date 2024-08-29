@@ -1,10 +1,18 @@
-# 5. Async & fetch
+# 4. TS: Async & fetch
 
+{% hint style="info" %}
 ## Theorie
 
 Bekijk voor het labo aan te vangen eerst de volgende topics:
 
 * [Asynchroon programmeren](../../nodejs-+-typescript/asynchroon-programmeren/)
+{% endhint %}
+
+## Oefeningen
+
+### Voorbereiding
+
+Maak een nieuwe directory `labo4` aan in de root van je project.
 
 ### Bitcoin-API
 
@@ -59,4 +67,3 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 {% content-ref url="../../exercises/node-typescript/school-api/" %}
 [school-api](../../exercises/node-typescript/school-api/)
 {% endcontent-ref %}
-

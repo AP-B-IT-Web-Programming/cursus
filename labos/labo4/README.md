@@ -1,8 +1,17 @@
-# Labo 4
+# 3. TS: Interfaces & functies
 
+{% hint style="info" %}
 ## Theorie
 
 Bekijk voor het labo aan te vangen eerst de volgende topics:
 
-* [Interfaces](../nodejs-+-typescript/type-systeem/interfaces.md)
-* [Functions](../nodejs-+-typescript/type-systeem/functions.md)
+* [Basis types](../../nodejs-+-typescript/type-systeem/basic-types.md) (any, undefined, null, union types)
+* [Arrays](../../nodejs-+-typescript/type-systeem/arrays.md)
+* [Input Lezen](../../nodejs-+-typescript/input-lezen.md) (menu)
+{% endhint %}
+
+## Oefeningen
+
+### Voorbereiding
+
+Maak een nieuwe directory `labo3` aan in de root van je project.

@@ -12,4 +12,4 @@ De route rendert een EJS template die de volgende boodschap toont, afhankelijk v
 
 De template bevat een HTML pagina met een `h1` element waarin de boodschap wordt getoond.
 
-![alt text](../../../exercises/express/hello-query/helloworld.png) ![alt text](../../../exercises/express/hello-query/bonjour.png)
+![alt text](helloworld.png) ![alt text](bonjour.png)

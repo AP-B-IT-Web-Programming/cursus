@@ -6,8 +6,8 @@ Maak een nieuwe route aan op `/` van de applicatie die een `GET` request afhande
 
 Als de gebruiker een URL invult en het formulier indient, wordt de gebruiker geredirect naar de ingevulde URL (aan de hand van `res.redirect`). Als de gebruiker geen URL invult wordt de gebruiker naar een zelf te kiezen URL geredirect (bv google.com).
 
-![reddit](../../../exercises/express/redirect-form/urlform.png)
+![reddit](urlform.png)
 
 Probeer hetzelfde te doen met een url die je kiest uit een dropdown list (bv. google.com, reddit.com, microsoft.com, ...).
 
-![alt text](../../../exercises/express/redirect-form/select.png)
+![alt text](select.png)

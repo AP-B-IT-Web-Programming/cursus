@@ -18,4 +18,4 @@ Als de gebruiker de terms and conditions niet aanvaardt, wordt het formulier opn
 
 Als het formulier correct werd ingevuld, wordt een bedanktbericht gerenderd. Het bedanktbericht bevat de tekst "Thank you for contacting us, {firstname} We will get back to you on the following email: {email}" waar uiteraard `{firstname}` en `{email}` worden vervangen door de waarden die de gebruiker heeft ingevuld.
 
-![Contact form](../../../exercises/express/contact-form/contact.png) ![Terms and conditions](../../../exercises/express/contact-form/tos.png) ![Message Empty](../../../exercises/express/contact-form/message\_empty.png) ![Ok](../../../exercises/express/contact-form/ok.png)
+![Contact form](contact.png) ![Terms and conditions](tos.png) ![Message Empty](message\_empty.png) ![Ok](ok.png)

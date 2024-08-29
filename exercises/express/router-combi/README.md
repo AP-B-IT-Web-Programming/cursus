@@ -1,6 +1,6 @@
 # Router Combi
 
-We gaan een combinatie oefening maken van drie voorgaande oefeningen: [Math Service](../labo7/labo9/math-service-express.md), [News Paper Search](../labo7/labo9/newspaper-search.md) en [Contact Form](../labo7/labo10/contact-form.md).
+We gaan een combinatie oefening maken van drie voorgaande oefeningen: [Math Service](../math-service-express/), [News Paper Search](../newspaper-search/) en [Contact Form](../contact-form/).
 
 Je mag zelf kiezen van welk project je als begin wilt gebruiken, je mag ook helemaal opnieuw beginnen en een nieuw project maken.
 
@@ -16,4 +16,4 @@ De werking van de applicatie moet hetzelfde blijven als de oefeningen die je heb
 
 Zorg dat de `/` route van je applicatie een overzicht geeft van de drie verschillende routes die je hebt gemaakt.
 
-![alt text](../../exercises/express/router-combi/router-combi.gif)
+![alt text](router-combi.gif)
