@@ -19,7 +19,7 @@
     * [Promises](cursus/nodejs-+-typescript/asynchroon-programmeren/promises.md)
     * [Async/Await](cursus/nodejs-+-typescript/asynchroon-programmeren/async-await.md)
     * [Fetch](cursus/nodejs-+-typescript/asynchroon-programmeren/fetch.md)
-* [Frontend](cursus/frontend/README.md)
+* [Frontend](cursus/frontend.md)
   * [VITE](cursus/frontend/vite.md)
   * [DOM Manipulatie](cursus/frontend/dom-manipulatie.md)
   * [Fetch APIs](cursus/frontend/fetch-apis.md)
@@ -37,6 +37,8 @@
     * [Router](cursus/backend/wat-is-een-backend-framework/router.md)
     * [Deployment](cursus/backend/wat-is-een-backend-framework/deployment.md)
   * [MySQL](cursus/backend/mysql.md)
+* [Fullstack](cursus/fullstack/README.md)
+  * [Van Form tot Database](cursus/fullstack/van-form-tot-database.md)
 
 ## Labos
 
