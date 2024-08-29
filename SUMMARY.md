@@ -2,16 +2,9 @@
 
 * [Introductie](README.md)
 
-## Tools
-
-* [Tools](tooling/tooling.md)
-  * [Devcontainers](tooling/devcontainers.md)
-  * [Git](tooling/git.md)
-  * [Terminal en bash](tooling/bash.md)
-
 ## Cursus
 
-* [NodeJS + TypeScript](cursus/nodejs-+-typescript/wat-is-nodejs.md)
+* [TypeScript](cursus/nodejs-+-typescript/wat-is-nodejs.md)
   * [Waarom TypeScript?](cursus/nodejs-+-typescript/waarom-typescript.md)
   * [Nieuw project](cursus/nodejs-+-typescript/projectmaken.md)
   * [Input lezen](cursus/nodejs-+-typescript/input-lezen.md)
@@ -26,19 +19,21 @@
     * [Promises](cursus/nodejs-+-typescript/asynchroon-programmeren/promises.md)
     * [Async/Await](cursus/nodejs-+-typescript/asynchroon-programmeren/async-await.md)
     * [Fetch](cursus/nodejs-+-typescript/asynchroon-programmeren/fetch.md)
-* [Express.js](cursus/express.js/wat-is-een-backend-framework.md)
-  * [Basis](cursus/express.js/basis.md)
-  * [Nodemon](cursus/express.js/nodemon.md)
-  * [Statische Bestanden](cursus/express.js/statische-bestanden.md)
-  * [EJS](cursus/express.js/ejs.md)
-  * [Request](cursus/express.js/requests/README.md)
-    * [GET Request](cursus/express.js/requests/get-request.md)
-    * [POST Request](cursus/express.js/requests/post-request.md)
-    * [Multi-part form data](cursus/express.js/requests/multi-part-form-data.md)
-  * [Response](cursus/express.js/response.md)
-  * [Router](cursus/express.js/router.md)
-  * [Middleware](cursus/express.js/middleware.md)
-  * [Deployment](cursus/express.js/deployment.md)
+* [Frontend](cursus/frontend.md)
+* [Backend](cursus/backend/README.md)
+  * [Express.js](cursus/backend/wat-is-een-backend-framework/README.md)
+    * [Basis](cursus/backend/wat-is-een-backend-framework/basis.md)
+    * [Nodemon](cursus/backend/wat-is-een-backend-framework/nodemon.md)
+    * [Statische Bestanden](cursus/backend/wat-is-een-backend-framework/statische-bestanden.md)
+    * [EJS](cursus/backend/wat-is-een-backend-framework/ejs.md)
+    * [Request](cursus/backend/wat-is-een-backend-framework/requests/README.md)
+      * [GET Request](cursus/backend/wat-is-een-backend-framework/requests/get-request.md)
+      * [POST Request](cursus/backend/wat-is-een-backend-framework/requests/post-request.md)
+      * [Multi-part form data](cursus/backend/wat-is-een-backend-framework/requests/multi-part-form-data.md)
+    * [Response](cursus/backend/wat-is-een-backend-framework/response.md)
+    * [Router](cursus/backend/wat-is-een-backend-framework/router.md)
+    * [Deployment](cursus/backend/wat-is-een-backend-framework/deployment.md)
+* [Fullstack](cursus/fullstack.md)
 
 ## Labos
 

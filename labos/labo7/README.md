@@ -6,9 +6,9 @@
 Bekijk voor het labo aan te vangen eerst de volgende topics:
 
 * [Basis Express](../../express.js/basis.md)
-* [GET Requests](../../cursus/express.js/requests/get-request.md)
-* [POST Requests](../../cursus/express.js/requests/post-request.md)
-* [Multi-part Form Data](../../cursus/express.js/requests/multi-part-form-data.md)
+* [GET Requests](../../cursus/backend/wat-is-een-backend-framework/requests/get-request.md)
+* [POST Requests](../../cursus/backend/wat-is-een-backend-framework/requests/post-request.md)
+* [Multi-part Form Data](../../cursus/backend/wat-is-een-backend-framework/requests/multi-part-form-data.md)
 {% endhint %}
 
 ## Oefeningen
