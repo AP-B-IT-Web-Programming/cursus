@@ -1,5 +1,6 @@
-# 2. Basis
+# 1. TS: Basis
 
+{% hint style="info" %}
 ## Theorie
 
 Bekijk voor het labo aan te vangen eerst de volgende topics:
@@ -9,14 +10,13 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 * [Eerste NodeJS App](../../nodejs-+-typescript/projectmaken.md)
 * [Input Lezen](../../nodejs-+-typescript/input-lezen.md) (nog geen menu)
 * [Basis types](../../nodejs-+-typescript/type-systeem/basic-types.md) (enkel string, number en boolean)
+{% endhint %}
 
 ## Oefeningen
 
-De meeste oefeningen hieronder zijn sterk gebaseerd op de oefeningen die je hebt gemaakt in de cursus webtechnologie. Je kan deze oefeningen gebruiken als basis voor de oefeningen hieronder. Het belangrijkste verschil hier is dat je nu gebruik zal maken van NodeJS en TypeScript. Let er dus op dat alle variabelen types hebben en dat je de juiste types gebruikt.
-
 ### Voorbereiding
 
-Maak een nieuwe directory `labo2` aan in de root van je project.
+Maak een nieuwe directory `labo1` aan in de root van je project.
 
 ### Hello, Name!
 
