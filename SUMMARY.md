@@ -21,6 +21,7 @@
     * [Fetch](cursus/nodejs-+-typescript/asynchroon-programmeren/fetch.md)
 * [Frontend](cursus/frontend.md)
   * [VITE](cursus/frontend/vite.md)
+  * [Deployment met Surge](cursus/frontend/deployment-met-surge.md)
   * [DOM Manipulatie](cursus/frontend/dom-manipulatie.md)
   * [Fetch APIs](cursus/frontend/fetch-apis.md)
 * [Backend](cursus/backend/README.md)
