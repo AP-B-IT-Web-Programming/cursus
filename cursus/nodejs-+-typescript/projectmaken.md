@@ -18,7 +18,7 @@ Nu moeten we **eenmalig** nog een aantal installaties doen voor we kunnen beginn
 
 We gaan met TypeScript werken, dus moeten we dit installeren. Hiervoor gebruiken we de Node Package Manager (npm) die automatisch mee geïnstalleerd werd met je node.js installatie. We komen later nog uitgebreid terug op het gebruik van npm.
 
-```
+```bash
 npm install -g typescript
 ```
 
@@ -26,7 +26,7 @@ Later leggen we meer uit over het gebruik van npm, weet nu dat de -g aanduiding 
 
 Opgelet ! Mac gebruikers moeten globaal installeren met administrator rechten. Het commando wordt dan:
 
-```
+```bash
 sudo npm install -g typescript
 ```
 
@@ -51,6 +51,10 @@ npm install -g ts-node
 ```
 
 Mac gebruikers denk aan het sudo commando!
+
+{% hint style="info" %}
+Je kan npm install ook korter schrijven : **npm i**
+{% endhint %}
 
 ## npm init
 

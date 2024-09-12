@@ -2,7 +2,7 @@
 
 Tot 2009 werd JavaScript exclusief gebruikt in browsers en was het gebruik van deze taal enkel nodig voor webpagina's. In 2009 veranderde dit verhaal helemaal bij het ontstaan van Node.js. Node.js laat het toe om JavaScript buiten de browser te gaan uitvoeren. Zo konden ook andere soorten applicaties worden gemaakt met JavaScript en steeg de populariteit van JavaScript heel snel. Dankzij Node.js konden web ontwikkelaars met 1 dezelfde taal volledige applicaties bouwen die op web servers en in de browser draaiden.
 
-Ondertussen is JavaScript de 7de meest gebruikte programmeertaal in de wereld en kan deze gebruikt worden voor bijna alles te maken zoals:
+Ondertussen is JavaScript de 3de meest gebruikte programmeertaal in de wereld en kan deze gebruikt worden voor bijna alles te maken zoals:
 
 * **Mobiele applicaties**
   * Bv. met React native
