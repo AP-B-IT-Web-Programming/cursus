@@ -62,6 +62,10 @@ npm init
 
 Dit commando zal een aantal vragen stellen over jouw project. Je kan deze gewoon beantwoorden door op enter te drukken. Als je dit commando hebt uitgevoerd zal je een nieuw bestand `package.json` zien in je directory. Dit bestand bevat alle informatie over jouw project. We zullen hier later nog op terugkomen.
 
+{% hint style="info" %}
+Je kan ook gebruik maken van "npm init -y" om de package.json aan te maken waar alle vragen met een 'yes' automatisch worden beantwoord.
+{% endhint %}
+
 ## TypeScript configuratie
 
 Nu we een nieuw project hebben aangemaakt moeten we een nieuwe TypeScript configuratie aanmaken. Dit doen we aan de hand van het `tsc --init` commando.

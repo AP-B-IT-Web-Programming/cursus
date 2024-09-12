@@ -51,7 +51,9 @@ Je werkt voornamelijk in Development mode. Vite maakt een webserver aan bereikba
 
 In build mode gaat Vite al je bestanden optimaliseren voor het web. Als je 'npm run build' uitvoert in een Vite-project, transformeert Vite al je ontwikkelingscode en assets naar een lichtgewicht, snelle, en goed geoptimaliseerde versie van je applicatie, klaar voor productie.
 
-Het resultaat van deze npm run build is een geoptimaliseerde versie van je project in een map genaamd dist, die je rechtstreeks kunt deployen naar een webserver.
+{% hint style="success" %}
+Het resultaat van deze npm run build is een geoptimaliseerde versie van je project in een map genaamd **dist**, die je rechtstreeks kunt deployen naar een webserver.
+{% endhint %}
 
 1. Productiebundeling
 
@@ -81,5 +83,7 @@ Vite gebruikt Terser of Esbuild om je JavaScript-code te minificeren, wat beteke
 
 Tijdens het builden analyseert en optimaliseert Vite je HTML-bestanden. Het past ook de juiste links naar CSS en JavaScript aan, zodat ze verwijzen naar de geoptimaliseerde versies van de bestanden.
 
+{% hint style="success" %}
 Van zodra je 'npm run build' hebt uitgevoerd krijg je een 'dist' folder met je geoptimaliseerde frontend code. Die kan je dus gaan publishen op het web. In het volgende hoofdstuk maken we gebruik van **Surge.sh** om onze webpage te publishen/hosten.
+{% endhint %}
 
