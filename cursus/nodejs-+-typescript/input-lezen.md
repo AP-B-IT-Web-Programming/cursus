@@ -23,7 +23,7 @@ import * as readline from 'readline-sync';
 Nu kan je de `question` functie gebruiken om een vraag te stellen aan de gebruiker. Deze functie heeft 1 parameter, namelijk de vraag die je wil stellen. Deze functie geeft een string terug met het antwoord van de gebruiker.
 
 ```typescript
-let name = readline.question("What's your name? ");
+let name : string = readline.question("What's your name? ");
 console.log(`Hello ${name}!`);
 ```
 
