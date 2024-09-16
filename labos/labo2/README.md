@@ -5,11 +5,11 @@
 
 Bekijk voor het labo aan te vangen eerst de volgende topics:
 
-* [Wat is NodeJS](../../nodejs-+-typescript/wat-is-nodejs.md)
-* [Waarom TypeScript?](../../nodejs-+-typescript/waarom-typescript.md)
-* [Eerste NodeJS App](../../nodejs-+-typescript/projectmaken.md)
-* [Input Lezen](../../nodejs-+-typescript/input-lezen.md) (nog geen menu)
-* [Basis types](../../nodejs-+-typescript/type-systeem/basic-types.md) (enkel string, number en boolean)
+* [Waarom TypeScript?](../../cursus/nodejs-+-typescript/waarom-typescript.md)
+* [Nieuw project](../../cursus/nodejs-+-typescript/projectmaken.md)
+* [Input Lezen](../../cursus/nodejs-+-typescript/input-lezen.md) (nog geen menu)
+* [Basis types](../../cursus/nodejs-+-typescript/type-systeem/basic-types.md) (enkel string, number en boolean)
+* [Conditionele blok](../../cursus/wat-is-nodejs/conditionele-blok.md)
 {% endhint %}
 
 ## Oefeningen
