@@ -1,4 +1,4 @@
-### Name from email
+# Name from Email
 
 Maak een nieuw project aan met de naam `name-from-email`.
 
@@ -6,14 +6,14 @@ We gaan in deze oefening een programma maken dat de naam van een email adres moe
 
 Je mag er van uitgaan dat het email adres altijd correct ingegeven wordt. Vervolgens zal de applicatie vragen of de gebruiker nog een email adres wil ingeven (adhv `keyInYNStrict`).
 
-#### Voorbeeld interactie
+## Voorbeeld interactie
 
 ```bash
-Geef het email adres in: andie.similon@ap.be
-De naam is A. Similon
+Geef het email adres in: jeroen.devos@ap.be
+De naam is J. Devos
 Wil je nog een email adres ingeven? (y/n) y
-Geef het email adres in: sven.maes@ap.be
-De naam is S. Maes
+Geef het email adres in: david.verhulst@ap.be
+De naam is D. Verhulst
 Wil je nog een email adres ingeven? (y/n) n
 Nog een goede dag!
 ```
