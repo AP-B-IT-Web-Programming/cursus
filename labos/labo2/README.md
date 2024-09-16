@@ -10,6 +10,7 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 * [Input Lezen](../../cursus/nodejs-+-typescript/input-lezen.md) (nog geen menu)
 * [Basis types](../../cursus/nodejs-+-typescript/type-systeem/basic-types.md) (enkel string, number en boolean)
 * [Conditionele blok](../../cursus/wat-is-nodejs/conditionele-blok.md)
+* [Loops](../../cursus/wat-is-nodejs/loops.md)
 {% endhint %}
 
 ## Oefeningen
