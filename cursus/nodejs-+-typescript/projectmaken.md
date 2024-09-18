@@ -30,7 +30,7 @@ Opgelet ! Mac gebruikers moeten globaal installeren met administrator rechten. H
 sudo npm install -g typescript
 ```
 
-Vervolgens ze je je wachtwoord moeten ingeven voor de globale bibliotheek geïnstalleerd wordt.
+Vervolgens zal je je wachtwoord moeten ingeven voor de globale bibliotheek geïnstalleerd wordt.
 
 ## Node types installeren
 
