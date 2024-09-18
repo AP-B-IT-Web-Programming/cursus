@@ -7,7 +7,7 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 
 * [Waarom TypeScript?](../../cursus/nodejs-+-typescript/waarom-typescript.md)
 * [Nieuw project](../../cursus/nodejs-+-typescript/projectmaken.md)
-* [Wat is een tsconfig.json?](../../cursus/wat-is-nodejs/wat-is-een-tsconfig.json.md)
+* [Wat is een tsconfig.json?](../../cursus/wat-is-nodejs/wat-is-een-tsconfig.json/)
 * [Input Lezen](../../cursus/nodejs-+-typescript/input-lezen.md) (nog geen menu)
 * [Basis types](../../cursus/nodejs-+-typescript/type-systeem/basic-types.md) (enkel string, number en boolean)
 * [Conditionele blok](../../cursus/wat-is-nodejs/conditionele-blok.md)
