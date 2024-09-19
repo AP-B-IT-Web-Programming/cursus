@@ -32,12 +32,6 @@ Maak een nieuwe directory `labo1` aan in de root van je project.
 [bmi-calculator](../../exercises/node-typescript/bmi-calculator/)
 {% endcontent-ref %}
 
-### BMI Calculator voor meerdere personen
-
-{% content-ref url="../labo3/bmi-calculator-multi.md" %}
-[bmi-calculator-multi.md](../labo3/bmi-calculator-multi.md)
-{% endcontent-ref %}
-
 ### Interest Calculator
 
 {% content-ref url="../../exercises/node-typescript/interest-calculator/" %}

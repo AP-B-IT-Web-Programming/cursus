@@ -51,3 +51,9 @@ Maak een nieuwe directory `labo1` aan in de root van je project.
 {% content-ref url="../../exercises/node-typescript/tic-tac-toe/" %}
 [tic-tac-toe](../../exercises/node-typescript/tic-tac-toe/)
 {% endcontent-ref %}
+
+### BMI Calculator voor meerdere personen
+
+{% content-ref url="bmi-calculator-multi.md" %}
+[bmi-calculator-multi.md](bmi-calculator-multi.md)
+{% endcontent-ref %}
