@@ -8,14 +8,14 @@
 
 ### Wiskundige functies
 
-{% content-ref url="../../../exercises/node-typescript/math-fun/" %}
-[math-fun](../../../exercises/node-typescript/math-fun/)
+{% content-ref url="../../labo3/math-fun.md" %}
+[math-fun.md](../../labo3/math-fun.md)
 {% endcontent-ref %}
 
 ### Array sum
 
-{% content-ref url="../../../exercises/node-typescript/array-sum/" %}
-[array-sum](../../../exercises/node-typescript/array-sum/)
+{% content-ref url="../../labo3/array-sum.md" %}
+[array-sum.md](../../labo3/array-sum.md)
 {% endcontent-ref %}
 
 ### Movies (vervolg)
