@@ -5,16 +5,16 @@
 
 Bekijk voor het labo aan te vangen eerst de volgende topics:
 
-* [Basis types](../../nodejs-+-typescript/type-systeem/basic-types.md) (any, undefined, null, union types)
-* [Arrays](../../nodejs-+-typescript/type-systeem/arrays.md)
-* [Input Lezen](../../nodejs-+-typescript/input-lezen.md) (menu)
+* [Arrays](../../cursus/nodejs-+-typescript/type-systeem/arrays.md)
+* [Functions](../../cursus/nodejs-+-typescript/type-systeem/functions.md)
+* [Array methodes](../../cursus/wat-is-nodejs/array-methods.md)
 {% endhint %}
 
 ## Oefeningen
 
 ### Voorbereiding
 
-Maak een nieuwe directory `labo1` aan in de root van je project.
+Maak een nieuwe directory `labo2` aan in de root van je project.
 
 ### Oefening: Som van getallen
 
