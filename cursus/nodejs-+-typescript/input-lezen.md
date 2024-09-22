@@ -5,13 +5,13 @@
 Soms is het handig om input te kunnen lezen van de gebruiker om interactie te hebben met de gebruiker. Bijvoorbeeld om de naam van de gebruiker te vragen, zijn leeftijd, ... In NodeJS kan je dit doen aan de hand van de `readline-sync` module. Deze module is standaard niet geïnstalleerd dus moet je deze eerst installeren.
 
 ```typescript
-npm i -g readline-sync
+npm i -D readline-sync
 ```
 
 We moeten ook nog de types installeren van deze module. Deze zijn niet standaard meegeleverd met de module. Je kan deze installeren aan de hand van het volgende commando:
 
 ```typescript
-npm i -g @types/readline-sync
+npm i -D @types/readline-sync
 ```
 
 Je moet deze module elke keer dat je deze nodig hebt importeren in je code:

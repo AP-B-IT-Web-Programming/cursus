@@ -11,7 +11,6 @@ Dit is de belangrijkste sectie in het bestand. Hier zet je de regels voor hoe Ty
 * **`strict`**: Als deze op `true` staat, dwingt TypeScript je om heel precies te zijn met types, wat helpt om fouten in je code te voorkomen.
 * **`outDir`**: Dit geeft de map aan waar de omgezette JavaScript-bestanden naartoe moeten. Bijvoorbeeld, als je `"outDir": "./build"` instelt, dan komen alle omgezette bestanden in de `build`-map.
 * **`rootDir`**: Dit geeft de map aan waar je TypeScript-bestanden staan. Bijvoorbeeld, als je `"rootDir": "./src"` instelt, kijkt TypeScript naar alle bestanden in de `src`-map.
-* **typeRoots** : Met deze instelling kun je expliciet aangeven in welke mappen TypeScript moet zoeken naar type-definitiebestanden.
 
 #### 2. **`include`**
 
