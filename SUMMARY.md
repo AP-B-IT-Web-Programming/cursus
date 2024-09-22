@@ -16,6 +16,7 @@
     * [Functions](cursus/nodejs-+-typescript/type-systeem/functions.md)
   * [Conditionele blok](cursus/wat-is-nodejs/conditionele-blok.md)
   * [Loops](cursus/wat-is-nodejs/loops.md)
+  * [Array methods](cursus/wat-is-nodejs/array-methods.md)
   * [Exceptions](cursus/nodejs-+-typescript/exceptions.md)
   * [Modules](cursus/nodejs-+-typescript/modules.md)
   * [Asynchroon Programmeren](cursus/nodejs-+-typescript/asynchroon-programmeren/README.md)

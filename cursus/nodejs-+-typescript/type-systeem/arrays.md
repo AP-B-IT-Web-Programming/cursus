@@ -12,26 +12,34 @@ We kiezen bijvoorbeeld een array van getallen (numbers). De declaratie van de va
 let numbers : number[];
 ```
 
+{% hint style="info" %}
+In andere talen zoals Java en C# moet je de lengte van de array meegeven. In JavaScript en TypeScript is dat niet zo. De array zal groeien met het aantal elementen er in geplaatst worden.
+{% endhint %}
+
 We willen meestal ook als begin waarde een lege array meegeven. Er zitten dus op dat moment nog geen waarden in. We kunnen een lege array toekennen aan de variabele op de volgende manier:
 
 ```typescript
 let numbers : number[] = [];
 ```
 
-{% hint style="info" %}
-In andere talen zoals Java en C# moet je de lengte van de array meegeven. In JavaScript en TypeScript is dat niet zo. De array zal groeien met het aantal elementen er in geplaatst worden.
+{% hint style="warning" %}
+Moderne programmeurs zullen meestal een array declareren met 'const' ipv 'let. De reden hiervoor is om te vermijden dat door een programmeerfout de array opnieuw zou geïnitialiseerd zou worden met een lege array \[].
 {% endhint %}
+
+```typescript
+const numbers : number[] = [];
+```
 
 Je kan ook op voorhand al een aantal elementen meegeven:
 
 ```typescript
-let numbers : number[] = [1,2,3,4,5];
+const numbers : number[] = [1,2,3,4,5];
 ```
 
 Om een element op te vragen van een array kan je dat doen aan de hand van vierkante haakjes met daarin een getal. Dit getal komt overeen met de positie van het element dat je wil opvragen. Let op: ook in TypeScript begint het eerste element bij 0.
 
 ```typescript
-let fruits : string[] = ["Banana","Apple","Orange"];
+const fruits : string[] = ["Banana","Apple","Orange"];
 
 console.log(fruits[0]); // Banana
 console.log(fruits[1]); // Apple
@@ -59,7 +67,7 @@ fruits[3] = "Kiwi";
 Soms is het nodig om te weten hoeveel elementen er in de array zitten. Dit kan je met `length` doen.
 
 ```typescript
-let fruits : string[] = ["Banana","Apple","Orange"];
+const fruits : string[] = ["Banana","Apple","Orange"];
 
 console.log(fruits.length); // 3
 ```
@@ -67,7 +75,7 @@ console.log(fruits.length); // 3
 Je kan ook de array uitprinten in je console venster. Dit is vooral handig tijdens het debuggen
 
 ```typescript
-let fruits : string[] = ["Banana","Apple","Orange"];
+const fruits : string[] = ["Banana","Apple","Orange"];
 
 console.log(fruits); // [ 'Banana', 'Apple', 'Orange' ]
 ```
@@ -75,7 +83,7 @@ console.log(fruits); // [ 'Banana', 'Apple', 'Orange' ]
 Ook een loop over een array is zeer gelijkaardig aan JavaScript.
 
 ```typescript
-let fruits : string[] = ["Banana","Apple","Orange"];
+const fruits : string[] = ["Banana","Apple","Orange"];
 
 for (let i : number = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
@@ -92,10 +100,10 @@ for (let i = 0; i < fruits.length; i++) {
 }
 ```
 
-In de `for...of` loop wordt in TypeScript de types van het element automatisch ingevuld. Je moet dus ook het type van `fruit` weglaten.
+In de `for...of` loop wordt in TypeScript de types van het element automatisch ingevuld. Je moet hier dus uitzonderlijk het type van `fruit` weglaten.
 
 ```typescript
-let fruits : string[] = ["Banana","Apple","Orange"];
+const fruits : string[] = ["Banana","Apple","Orange"];
 
 for (let fruit of fruits) {
     console.log(fruit);
@@ -104,10 +112,10 @@ for (let fruit of fruits) {
 
 ### Multi-dimensionale arrays
 
-Een array kan ook een array bevatten. Dit noemen we een multi-dimensionale array. Je kan dit op de volgende manier doen:
+Een array kan ook een array bevatten. Dit noemen we een multi-dimensionale array of matrix. Je kan dit op de volgende manier doen:
 
 ```typescript
-let matrix : number[][] = [
+const matrix : number[][] = [
     [1,2,3],
     [4,5,6],
     [7,8,9]
@@ -123,7 +131,7 @@ console.log(matrix[0][0]); // 1
 Nog een voorbeeld:
 
 ```typescript
-let starterPokemon : string[][] = [
+const starterPokemon : string[][] = [
     ["Bulbasaur","Charmander","Squirtle"],
     ["Chikorita","Cyndaquil","Totodile"],
     ["Treecko","Torchic","Mudkip"]
@@ -133,9 +141,9 @@ let starterPokemon : string[][] = [
 Als je hier over wil itereren met een for loop kan je dit op de volgende manier doen:
 
 ```typescript
-for (let i=0;i<starterPokemon.length;i++) {
+for (let i : number = 0; i < starterPokemon.length; i++) {
     console.log(`Generation ${i+1}:`);
-    for (let j=0;j<starterPokemon[i].length;j++) {
+    for (let j : number = 0; j < starterPokemon[i].length; j++) {
         console.log(starterPokemon[i][j])
     }
 }
@@ -169,7 +177,7 @@ let country : [string, number, number] = [
 Je kan ook arrays maken van tuples. Bijvoorbeeld als we een lijst van landen willen maken
 
 ```typescript
-let countries : [string, number, number][] = [
+const countries : [string, number, number][] = [
     ["Rotterdam", 51.926517, 4.462456],
     ["Amsterdam", 52.374021, 4.88969],
     ["Utrecht", 52.0908, 5.1214],
@@ -186,4 +194,3 @@ for (let country of countries) {
     console.log(`${country[0]} ${country[1]} ${country[2]}`)
 }
 ```
-
