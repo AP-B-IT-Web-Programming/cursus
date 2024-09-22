@@ -187,7 +187,7 @@ Een forEach kan meestal perfect vervangen worden door een gewone for / for ... o
 ```typescript
 const planets : string[] =  [‘Mercury’, ‘Venus’, ‘Earth’, ‘Mars’, ‘Jupiter’, ‘Saturn’, ‘Uranus’, ‘Neptune’];
 
-for(let p : planets) {
+for(let p of planets) {
     console.log(p)
 }
 ```

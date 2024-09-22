@@ -90,16 +90,6 @@ for (let i : number = 0; i < fruits.length; i++) {
 }
 ```
 
-Door type inference is het ook mogelijk het type van `i` weg te laten. TypeScript zal dit automatisch als een `number` type beschouwen.
-
-```typescript
-let fruits : string[] = ["Banana","Apple","Orange"];
-
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]);
-}
-```
-
 In de `for...of` loop wordt in TypeScript de types van het element automatisch ingevuld. Je moet hier dus uitzonderlijk het type van `fruit` weglaten.
 
 ```typescript
