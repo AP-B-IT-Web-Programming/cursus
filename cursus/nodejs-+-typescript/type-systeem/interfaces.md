@@ -1,14 +1,14 @@
-# Interfaces
+# Interface
 
-Er bestaan een aantal datatypes in TypeScript die we "primitieve" of "eenvoudige" datatypes noemen. Dit is omdat de waarden altijd maar uit 1 enkel ding bestaat. In het hoofdstuk over arrays heb je gezien dat er ook nog een ander soort datatypes bestaat: de complexe datatypes. Deze worden opgebouwd uit meerdere primitieve datatypes. 
+Er bestaan een aantal datatypes in TypeScript die we "primitieve" of "eenvoudige" datatypes noemen. Dit is omdat de waarden altijd maar uit 1 enkel ding bestaat. In het hoofdstuk over arrays heb je gezien dat er ook nog een ander soort datatypes bestaat: de complexe datatypes. Deze worden opgebouwd uit meerdere primitieve datatypes.
 
-Een object is een ander voorbeeld van een complex datatype. In JavaScript en TypeScript kom je objecten haast overal tegen. Daarom is het belangrijk om deze te begrijpen en deze te kunnen gebruiken. 
+Een object is een ander voorbeeld van een complex datatype. In JavaScript en TypeScript kom je objecten haast overal tegen. Daarom is het belangrijk om deze te begrijpen en deze te kunnen gebruiken.
 
-## Type van een object
+## Interface van een object literal
 
 We kunnen een object beschrijven aan de hand van een interface . Deze interface beschrijft welke properties een object bevat en kan bevatten. We maken een eigen soort type dat we later kunnen gebruiken bij het declareren van onze variabelen.
 
-Stel dat je het volgende object in JavaScript hebt:
+Stel dat je het volgende object literal in JavaScript hebt:
 
 ```typescript
 let andie = {
@@ -80,6 +80,10 @@ let debbie: Person = {
 } // Error: Type 'string' is not assignable to type 'number'
 ```
 
+## Interface in class
+
+TODO
+
 ## Objecten in objecten
 
 Het is ook mogelijk om objecten in andere objecten te gaan steken. Bijvoorbeeld voor ons User object zouden we kunnen kiezen om ook een adres toe te voegen. We zouden deze als aparte eigenschappen kunnen opgeven van het user object maar het is beter om dit in een apart object te steken.
@@ -148,88 +152,9 @@ anders krijg je deze error:
 console.log(user.address.street); // Error: Object is possibly 'undefined'
 ```
 
-## Record type
-
-Een record type is een object waarvan we de properties niet kennen. We weten niet welke properties het object zal hebben. We kunnen dit aangeven aan de hand van de `Record` type. Dit type heeft twee type parameters: het eerste type parameter is het type van de keys en het tweede type parameter is het type van de values.
-
-Stel dat we een object willen gebruiken om bij te houden hoeveel keer een bepaalde waarde voorkomt in een array. We kunnen onmogelijk op voorhand weten welke waarden er in de array zullen zitten dus we kunnen niet op voorhand zeggen welke properties het object zal hebben. We kunnen dit oplossen aan de hand van de `Record` type:
-
-```typescript
-let count: Record<string, number> = {};
-
-let values = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
-
-for (let value of values) {
-  if (count[value]) {
-    count[value]++;
-  } else {
-    count[value] = 1;
-  }
-}
-
-console.log(count); // { '1': 3, '2': 3, '3': 3, '4': 3, '5': 3 }
-```
-
-## JSON bestand inlezen
-
-### import statement
-
-Je kan aan de hand van het `import` statement in TypeScript een JSON bestand inlezen. Dit is handig als je bijvoorbeeld een configuratie bestand hebt dat je wil inlezen of dat je een lijst van objecten wil inlezen vanuit een bestand.
-
-Stel dat je een JSON bestand `users.json` hebt met de volgende inhoud:
-
-```json
-[
-  {
-    "name": "Andie",
-    "age": 30,
-    "address": {
-      "street": "Fakestreet",
-      "number": 133,
-      "city": "Fakegem"
-    }
-  },
-  {
-    "name": "Debbie",
-    "age": 25,
-    "address": {
-      "street": "Fakestreet",
-      "number": 133,
-      "city": "Fakegem"
-    }
-  }
-]
-```
-
-Dan kan je dit bestand inlezen aan de hand van het `import` statement:
-
-```typescript
-import data from "./users.json";
-```
-
-Je moet hier wel op letten dat je in je `tsconfig.json` bestand de volgende optie hebt aangezet:
-
-```json
-{
-  "compilerOptions": {
-    ...
-    "resolveJsonModule": true
-    ...
-  }
-}
-```
-
-Je moet dan nog wel de inhoud van `usersJson` in een variabele of constante steken:
-
-```typescript
-const users: User[] = data;
-```
-
-Het is niet altijd mogelijk om een bestand in te lezen aan de hand van het `import` statement. Als je bijvoorbeeld een bestand wil inlezen dat niet in je project zit en ergens anders op je computer staat dan kan je dit niet inlezen aan de hand van het `import` statement. In dat geval kan je gebruik maken van de `fs` module.
-
 ## Interessante operators
 
-### De .? (of optionele chaining) operator
+### De ?. (of optionele chaining) operator
 
 De optionele chaining operator is een nieuwe operator die sinds TypeScript 3.7 beschikbaar is. Deze operator is zeer handig als je objecten in objecten hebt. Stel dat je een object hebt met een aantal properties en je wil een property van een property opvragen. Als je niet zeker bent of de property wel bestaat dan kan je de optionele chaining operator gebruiken.
 
