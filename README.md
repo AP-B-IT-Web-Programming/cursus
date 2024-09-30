@@ -2,7 +2,7 @@
 
 Welkom in de cursus Web Programming. In deze cursus gaan we ons verdiepen in het ontwikkelen van web applicaties in TypeScript. TypeScript is een variant van JavaScript die het mogelijk maakt om nog beter gestructureerde code te schrijven. We zullen zien hoe we strong typed variabelen kunnen gebruiken, hoe we objecten kunnen gebruiken en hoe we asynchroon kunnen programmeren.
 
-Nadat we deze basis onder de knie hebben gaan we ons verdiepen in het ontwikkelen van een Frontend applicatie, waarbij de DOM wordt aangepast en aangestuurd met behulp van Typescript code.
+Nadat we deze basis onder de knie hebben gaan we ons verdiepen in het ontwikkelen van een Frontend applicatie, waarbij de DOM wordt aangepast en aangestuurd met behulp van Typescript.
 
 Vervolgens ontwikkelen we ook een Backend applicatie, zodat we Node en de talloze packages op NPM kunnen gebruiken. We roepen ook een MySQL database aan, zodat we dynamisch data kunnen aanroepen en aanpassen met behulp van onze Frontend applicatie die we voordien bouwden.
 
