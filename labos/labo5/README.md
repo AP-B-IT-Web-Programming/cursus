@@ -16,54 +16,54 @@ Maak een nieuwe directory `labo4` aan in de root van je project.
 
 ### Bitcoin-API
 
-{% content-ref url="../../exercises/node-typescript/bitcoin-api/" %}
-[bitcoin-api](../../exercises/node-typescript/bitcoin-api/)
+{% content-ref url="bitcoin-api.md" %}
+[bitcoin-api.md](bitcoin-api.md)
 {% endcontent-ref %}
 
 ### slowSum
 
-{% content-ref url="../../exercises/node-typescript/slow-sum/" %}
-[slow-sum](../../exercises/node-typescript/slow-sum/)
+{% content-ref url="slow-sum.md" %}
+[slow-sum.md](slow-sum.md)
 {% endcontent-ref %}
 
 ### fakeFetch
 
-{% content-ref url="../../exercises/node-typescript/fake-fetch/" %}
-[fake-fetch](../../exercises/node-typescript/fake-fetch/)
+{% content-ref url="fake-fetch.md" %}
+[fake-fetch.md](fake-fetch.md)
 {% endcontent-ref %}
 
 ### **Promise All**
 
-{% content-ref url="../../exercises/node-typescript/promise-all/" %}
-[promise-all](../../exercises/node-typescript/promise-all/)
+{% content-ref url="promise-all.md" %}
+[promise-all.md](promise-all.md)
 {% endcontent-ref %}
 
 ### Unix Timestamp API
 
-{% content-ref url="../../exercises/node-typescript/unix-timestamp-api/" %}
-[unix-timestamp-api](../../exercises/node-typescript/unix-timestamp-api/)
+{% content-ref url="unix-timestamp-api.md" %}
+[unix-timestamp-api.md](unix-timestamp-api.md)
 {% endcontent-ref %}
 
 ### **Cocktails Promise All**
 
-{% content-ref url="../../exercises/node-typescript/cocktails-promise-all/" %}
-[cocktails-promise-all](../../exercises/node-typescript/cocktails-promise-all/)
+{% content-ref url="cocktails-promise-all.md" %}
+[cocktails-promise-all.md](cocktails-promise-all.md)
 {% endcontent-ref %}
 
 ### **Cocktails-API**
 
-{% content-ref url="../../exercises/node-typescript/cocktails-api/" %}
-[cocktails-api](../../exercises/node-typescript/cocktails-api/)
+{% content-ref url="cocktails-api.md" %}
+[cocktails-api.md](cocktails-api.md)
 {% endcontent-ref %}
 
 ### Joke API
 
-{% content-ref url="../../exercises/node-typescript/joke-api/" %}
-[joke-api](../../exercises/node-typescript/joke-api/)
+{% content-ref url="joke-api.md" %}
+[joke-api.md](joke-api.md)
 {% endcontent-ref %}
 
 ### School API
 
-{% content-ref url="../../exercises/node-typescript/school-api/" %}
-[school-api](../../exercises/node-typescript/school-api/)
+{% content-ref url="school-api.md" %}
+[school-api.md](school-api.md)
 {% endcontent-ref %}

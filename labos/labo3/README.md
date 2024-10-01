@@ -5,8 +5,8 @@
 
 Bekijk voor het labo aan te vangen eerst de volgende topics:
 
-* [Arrays](../../cursus/nodejs-+-typescript/type-systeem/arrays.md)
-* [Functions](../../cursus/nodejs-+-typescript/type-systeem/functions.md)
+* [Arrays](../../cursus/wat-is-nodejs/type-systeem/arrays.md)
+* [Functions](../../cursus/wat-is-nodejs/type-systeem/functions.md)
 * [Array methodes](../../cursus/wat-is-nodejs/array-methods.md)
 {% endhint %}
 
@@ -18,8 +18,8 @@ Maak een nieuwe directory `labo2` aan in de root van je project.
 
 ### Som van getallen
 
-{% content-ref url="../../exercises/node-typescript/som-van-getallen/" %}
-[som-van-getallen](../../exercises/node-typescript/som-van-getallen/)
+{% content-ref url="som-van-getallen.md" %}
+[som-van-getallen.md](som-van-getallen.md)
 {% endcontent-ref %}
 
 ### Math Fun
@@ -36,32 +36,32 @@ Maak een nieuwe directory `labo2` aan in de root van je project.
 
 ### Puntenboek
 
-{% content-ref url="../../exercises/node-typescript/puntenboek/" %}
-[puntenboek](../../exercises/node-typescript/puntenboek/)
+{% content-ref url="puntenboek.md" %}
+[puntenboek.md](puntenboek.md)
 {% endcontent-ref %}
 
 ### Rot13
 
-{% content-ref url="../../exercises/node-typescript/rot13/" %}
-[rot13](../../exercises/node-typescript/rot13/)
+{% content-ref url="rot13.md" %}
+[rot13.md](rot13.md)
 {% endcontent-ref %}
 
 ### Pokemon team
 
-{% content-ref url="../../exercises/node-typescript/pokemon-team/" %}
-[pokemon-team](../../exercises/node-typescript/pokemon-team/)
+{% content-ref url="pokemon-team.md" %}
+[pokemon-team.md](pokemon-team.md)
 {% endcontent-ref %}
 
 ### Todo list
 
-{% content-ref url="../../exercises/node-typescript/todo-list-string/" %}
-[todo-list-string](../../exercises/node-typescript/todo-list-string/)
+{% content-ref url="todo-list-string.md" %}
+[todo-list-string.md](todo-list-string.md)
 {% endcontent-ref %}
 
 ### Tic Tac Toe
 
-{% content-ref url="../../exercises/node-typescript/tic-tac-toe/" %}
-[tic-tac-toe](../../exercises/node-typescript/tic-tac-toe/)
+{% content-ref url="tic-tac-toe.md" %}
+[tic-tac-toe.md](tic-tac-toe.md)
 {% endcontent-ref %}
 
 ### BMI Calculator voor meerdere personen

@@ -2,8 +2,8 @@
 
 ### Short Notation
 
-{% content-ref url="../../../exercises/node-typescript/short-notation/" %}
-[short-notation](../../../exercises/node-typescript/short-notation/)
+{% content-ref url="short-notation.md" %}
+[short-notation.md](short-notation.md)
 {% endcontent-ref %}
 
 ### Wiskundige functies
@@ -20,18 +20,18 @@
 
 ### Movies (vervolg)
 
-{% content-ref url="../../../exercises/node-typescript/movies-functions/" %}
-[movies-functions](../../../exercises/node-typescript/movies-functions/)
+{% content-ref url="movies-functions.md" %}
+[movies-functions.md](movies-functions.md)
 {% endcontent-ref %}
 
 ### Filter
 
-{% content-ref url="../../../exercises/node-typescript/filter-numbers/" %}
-[filter-numbers](../../../exercises/node-typescript/filter-numbers/)
+{% content-ref url="filter-numbers.md" %}
+[filter-numbers.md](filter-numbers.md)
 {% endcontent-ref %}
 
 ### atLeastTwo
 
-{% content-ref url="../../../exercises/node-typescript/at-least-two/" %}
-[at-least-two](../../../exercises/node-typescript/at-least-two/)
+{% content-ref url="at-least-two.md" %}
+[at-least-two.md](at-least-two.md)
 {% endcontent-ref %}

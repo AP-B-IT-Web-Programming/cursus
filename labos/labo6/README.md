@@ -16,30 +16,30 @@ Maak een nieuwe directory `labo5` aan in de root van je project.
 
 ### Math Module
 
-{% content-ref url="../../exercises/node-typescript/math-module/" %}
-[math-module](../../exercises/node-typescript/math-module/)
+{% content-ref url="math-module.md" %}
+[math-module.md](math-module.md)
 {% endcontent-ref %}
 
 ### Export interfaces
 
-{% content-ref url="../../exercises/node-typescript/export-interfaces/" %}
-[export-interfaces](../../exercises/node-typescript/export-interfaces/)
+{% content-ref url="export-interfaces.md" %}
+[export-interfaces.md](export-interfaces.md)
 {% endcontent-ref %}
 
 ### Cowsay Module
 
-{% content-ref url="../../exercises/node-typescript/cowsay-module/" %}
-[cowsay-module](../../exercises/node-typescript/cowsay-module/)
+{% content-ref url="cowsay-module.md" %}
+[cowsay-module.md](cowsay-module.md)
 {% endcontent-ref %}
 
 ### Cat GPT
 
-{% content-ref url="../../exercises/node-typescript/cat-gpt/" %}
-[cat-gpt](../../exercises/node-typescript/cat-gpt/)
+{% content-ref url="cat-gpt.md" %}
+[cat-gpt.md](cat-gpt.md)
 {% endcontent-ref %}
 
 ### Rainbow Chalk
 
-{% content-ref url="../../exercises/node-typescript/rainbow-chalk/" %}
-[rainbow-chalk](../../exercises/node-typescript/rainbow-chalk/)
+{% content-ref url="rainbow-chalk.md" %}
+[rainbow-chalk.md](rainbow-chalk.md)
 {% endcontent-ref %}

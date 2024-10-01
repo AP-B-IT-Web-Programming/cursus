@@ -19,12 +19,12 @@ Maak een nieuwe directory `labo9` aan in de root van je project.
 
 ### Hello Express
 
-{% content-ref url="../../exercises/express/hello-express/" %}
-[hello-express](../../exercises/express/hello-express/)
+{% content-ref url="hello-express.md" %}
+[hello-express.md](hello-express.md)
 {% endcontent-ref %}
 
 ### DadJoke Express
 
-{% content-ref url="../../exercises/express/dadjoke-express/" %}
-[dadjoke-express](../../exercises/express/dadjoke-express/)
+{% content-ref url="dadjoke-express.md" %}
+[dadjoke-express.md](dadjoke-express.md)
 {% endcontent-ref %}
