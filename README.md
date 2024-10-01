@@ -4,7 +4,7 @@ Welkom in de cursus Web Programming. In deze cursus gaan we ons verdiepen in het
 
 Nadat we deze basis onder de knie hebben gaan we ons verdiepen in het ontwikkelen van een Frontend applicatie, waarbij de DOM wordt aangepast en aangestuurd met behulp van Typescript.
 
-Vervolgens ontwikkelen we ook een Backend applicatie, zodat we Node en de talloze packages op NPM kunnen gebruiken. We roepen ook een MySQL database aan, zodat we dynamisch data kunnen aanroepen en aanpassen met behulp van onze Frontend applicatie die we voordien bouwden.
+Daarna ontwikkelen we ook een Backend applicatie, zodat we Node en de talloze packages op NPM kunnen gebruiken. We roepen ook een MySQL database aan, zodat we dynamisch data kunnen aanroepen en aanpassen met behulp van onze Frontend applicatie die we voordien bouwden.
 
 Dit leidt dan tot een Fullstack applicatie, waar Frontend en Backend samenwerken, en elk onderdeel zorgt voor onderdelen die we tegenwoordig als essentieel beschouwen binnen een web applicatie.
 
