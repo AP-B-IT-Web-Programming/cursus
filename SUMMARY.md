@@ -67,7 +67,7 @@
   * [Todo List String](labos/labo3/todo-list-string.md)
   * [Tick Tac Toe](labos/labo3/tic-tac-toe.md)
   * [BMI Calculator Multi](labos/labo3/bmi-calculator-multi.md)
-* [3. TS: Interfaces & functies](labos/labo4/README.md)
+* [3. TS: Interfaces & classes](labos/labo4/README.md)
   * [Interfaces](labos/labo4/interfaces/README.md)
     * [Recepten](labos/labo4/interfaces/recepten.md)
     * [Movies Objects](labos/labo4/interfaces/movies-objects.md)
