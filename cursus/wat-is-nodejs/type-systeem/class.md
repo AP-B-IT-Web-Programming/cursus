@@ -25,6 +25,14 @@ Als we zeggen dat een object overerft van een ander object, dan wil dat zeggen d
 * de eigenschappen van het andere object gebruikt
 * deze eigenschappen eventueel kan overschrijven
 
+{% hint style="danger" %}
+Belangrijk !&#x20;
+
+TypeScript / JavaScript is géén OO taal ! De technieken die in dit hoofdstuk worden uitgelegd  doen vermoeden dat dit wel het geval is maar in de achtergrond wordt steeds prototyping gebruikt.
+
+Alle onderstaande keywords zijn slechts "syntactic sugar" rond het JS prototype.
+{% endhint %}
+
 ## Class
 
 ```typescript
