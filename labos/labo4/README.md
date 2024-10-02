@@ -1,4 +1,4 @@
-# 3. TS: Interfaces & functies
+# 3. TS: Interfaces & classes
 
 {% hint style="info" %}
 ## Theorie
@@ -14,3 +14,9 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 ### Voorbereiding
 
 Maak een nieuwe directory `labo3` aan in de root van je project.
+
+### Recepten
+
+{% content-ref url="recepten.md" %}
+[recepten.md](recepten.md)
+{% endcontent-ref %}

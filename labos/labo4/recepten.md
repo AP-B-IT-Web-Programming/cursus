@@ -1,15 +1,17 @@
-### Oefening: Recepten
+# Recepten
 
 Maak een nieuw project aan met de naam `recepten`.
 
-Je maakt eerst een interface voor het \`Recept\`\` object. Dit bevat een
+**De opdracht werk je uit enkel gebruik makende van interfaces en object literals. Je gebruikt géén class !**
+
+Je maakt eerst een interface `Recept`. Dit bevat een
 
 * naam (tekst)
 * beschrijving (tekst)
 * personen (getal)
 * ingredienten (array van ingredienten)
 
-voor de ingredienten maak je een interface `Ingredient`. Dit bevat een
+Voor de ingredienten maak je een interface `Ingredient`. Dit bevat een
 
 * naam (tekst)
 * hoeveelheid (tekst) (bv "1 stuk", "1 kg")
@@ -17,7 +19,7 @@ voor de ingredienten maak je een interface `Ingredient`. Dit bevat een
 
 Maak nu een object aan voor een lasagne recept. Je kan de ingredienten zelf kiezen. Print het recept af en bereken de totale kostprijs van het recept.
 
-#### Voorbeeld interactie
+## Voorbeeld interactie
 
 ```bash
 Recept: Lasagne
