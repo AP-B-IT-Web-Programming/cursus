@@ -71,7 +71,6 @@
   * [Recepten](labos/labo4/recepten.md)
   * [Transportmiddelen](labos/labo4/transportmiddelen.md)
   * [Movies](labos/labo4/movies-objects.md)
-  * [Movies Functions](labos/labo4/movies-functions.md)
   * [Filter Numbers](labos/labo4/filter-numbers.md)
 * [4. TS: Async & fetch](labos/labo5/README.md)
   * [Fake Fetch](labos/labo5/fake-fetch.md)
