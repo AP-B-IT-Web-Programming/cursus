@@ -82,7 +82,40 @@ let debbie: Person = {
 
 ## Interface in class
 
-TODO
+Een interface kan ook aan een class gekoppeld worden. In dit geval spreken we dan van een contract dat wordt aangegaan tussen de class en de interface.
+
+Het gedrag bij een class is licht verschillend dan bij de object literal.
+
+```typescript
+class Student implements Person {
+    #name: string;
+    #age: number;
+    
+    constructor(name:string, age:number) {
+        this.#name = name;
+        this.#age = age;
+    }
+    
+    get name():string {
+        return this.#name;
+    }
+    set name(value:string) {
+        this.#name = value;
+    }
+    
+    get age():string {
+        return this.#age;
+    }
+    set age(value:string) {
+        this.#age= value;
+    }
+    
+}
+```
+
+Bij gebruik in een class wordt de interface toegevoegd via het `implements` keyword. Van zodra de interface aan de class gekoppeld wordt moeten **minstens** de get/set van de properties in de interface geïmplementeerd worden.
+
+In tegenstelling tot de object literal kunnen in de class wél extra properties toegevoegd worden. De "isAdmin" property toevoegen aan bovenstaande class zal géén fout geven.
 
 ## Objecten in objecten
 
