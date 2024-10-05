@@ -5,7 +5,7 @@
 
 Bekijk voor het labo aan te vangen eerst de volgende topics:
 
-* [Asynchroon programmeren](../../nodejs-+-typescript/asynchroon-programmeren/)
+* [Asynchroon programmeren](../../cursus/wat-is-nodejs/asynchroon-programmeren/)
 {% endhint %}
 
 ## Oefeningen
