@@ -48,7 +48,7 @@ console.log(result);
 Let wel op dat als je deze code plaatst in de globale scope, je een error zal krijgen. Dit komt omdat je de await keyword enkel kan gebruiken in een async functie. Je kan dit oplossen door de code in een async functie te plaatsen of door de code in een IIFE (Immediately Invoked Function Expression) te plaatsen.
 
 ```typescript
-async function main(): void {
+async function main(): Promise<void> {
     let result : number = await multiply(2, 2);
     result = await multiply(result, 5);
     result = await multiply(result, 10);
@@ -104,7 +104,7 @@ Dit kan met async en await als volgt:
 ```typescript
 import { readFile, writeFile } from "fs/promises";
 
-async function main(): void {
+async function main(): Promise<void> {
     try {
         const getal1 = await readFile("getal1.txt", "utf-8");
         const getal2 = await readFile("getal2.txt", "utf-8");
