@@ -2,9 +2,9 @@
 
 Maak een nieuw project aan met de naam `transportmiddelen` .
 
-**Gebruik voor deze oefening class en interface, geen object literals!**
+**Gebruik voor deze oefening class, geen object literals!**
 
-Maak een interface Voertuig, deze bevat:
+Maak een class Voertuig, deze bevat:
 
 * property naam (string)
 * property brandstof (Brandstof)
