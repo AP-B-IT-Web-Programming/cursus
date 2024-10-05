@@ -82,7 +82,6 @@
   * [School API](labos/labo5/school-api.md)
   * [Cocktails API](labos/labo5/cocktails-api.md)
   * [Unix Timestamp API](labos/labo5/unix-timestamp-api.md)
-  * [Todo List Objects](labos/labo5/todo-list-objects.md)
 * [5. TS: Modules & NPM](labos/labo6/README.md)
   * [Math Module](labos/labo6/math-module.md)
   * [Export Interfaces](labos/labo6/export-interfaces.md)

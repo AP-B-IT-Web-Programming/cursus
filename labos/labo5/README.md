@@ -14,10 +14,10 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 
 Maak een nieuwe directory `labo4` aan in de root van je project.
 
-### Bitcoin-API
+### fakeFetch
 
-{% content-ref url="bitcoin-api.md" %}
-[bitcoin-api.md](bitcoin-api.md)
+{% content-ref url="fake-fetch.md" %}
+[fake-fetch.md](fake-fetch.md)
 {% endcontent-ref %}
 
 ### slowSum
@@ -26,28 +26,28 @@ Maak een nieuwe directory `labo4` aan in de root van je project.
 [slow-sum.md](slow-sum.md)
 {% endcontent-ref %}
 
-### fakeFetch
-
-{% content-ref url="fake-fetch.md" %}
-[fake-fetch.md](fake-fetch.md)
-{% endcontent-ref %}
-
 ### **Promise All**
 
 {% content-ref url="promise-all.md" %}
 [promise-all.md](promise-all.md)
 {% endcontent-ref %}
 
-### Unix Timestamp API
-
-{% content-ref url="unix-timestamp-api.md" %}
-[unix-timestamp-api.md](unix-timestamp-api.md)
-{% endcontent-ref %}
-
 ### **Cocktails Promise All**
 
 {% content-ref url="cocktails-promise-all.md" %}
 [cocktails-promise-all.md](cocktails-promise-all.md)
+{% endcontent-ref %}
+
+### Bitcoin-API
+
+{% content-ref url="bitcoin-api.md" %}
+[bitcoin-api.md](bitcoin-api.md)
+{% endcontent-ref %}
+
+### Unix Timestamp API
+
+{% content-ref url="unix-timestamp-api.md" %}
+[unix-timestamp-api.md](unix-timestamp-api.md)
 {% endcontent-ref %}
 
 ### **Cocktails-API**
