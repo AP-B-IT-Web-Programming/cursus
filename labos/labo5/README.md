@@ -14,12 +14,6 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 
 Maak een nieuwe directory `labo4` aan in de root van je project.
 
-### fakeFetch
-
-{% content-ref url="fake-fetch.md" %}
-[fake-fetch.md](fake-fetch.md)
-{% endcontent-ref %}
-
 ### slowSum
 
 {% content-ref url="slow-sum.md" %}
