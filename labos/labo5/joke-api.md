@@ -10,7 +10,7 @@ Nadat je de categorieën hebt opgehaald, kan je de gebruiker vragen om een categ
 
 Vervolgens wordt er een grap opgehaald van de gekozen categorie en type. Je kan de grappen ophalen op de volgende URL:
 
-https://v2.jokeapi.dev/joke/`<categorie>`/`<type>` bv. https://v2.jokeapi.dev/joke/Programming/single
+https://v2.jokeapi.dev/joke/`<categorie>`/?type=`<type>` bv. https://v2.jokeapi.dev/joke/Programming/?type=single
 
 Let op dat de `single` grappen een `joke` veld hebben en de `twopart` grappen een `setup` en `delivery` veld. Hou hier dus rekening mee bij het tonen van de grap.
 
