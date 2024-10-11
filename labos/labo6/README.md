@@ -20,12 +20,6 @@ Maak een nieuwe directory `labo5` aan in de root van je project.
 [math-module.md](math-module.md)
 {% endcontent-ref %}
 
-### Export interfaces
-
-{% content-ref url="export-interfaces.md" %}
-[export-interfaces.md](export-interfaces.md)
-{% endcontent-ref %}
-
 ### Cowsay Module
 
 {% content-ref url="cowsay-module.md" %}
