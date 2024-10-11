@@ -1,6 +1,7 @@
 # Modules
 
 ## Eigen Modules Maken
+
 ### Wat zijn modules?
 
 Modules zijn een manier om je code te organiseren in verschillende bestanden. Vaak wil je bepaalde functies beschikbaar maken voor andere bestanden. Dit kan je doen door deze functies in een module te zetten. Je kan dan in andere bestanden deze module importeren en de functies gebruiken.
@@ -68,7 +69,7 @@ console.log(areaSquare(2));
 Heel vaak wordt er door een module maar één functie geëxporteerd. In dat geval kan je gebruik maken van een default export. Dit is een export zonder naam.
 
 ```typescript
-export default funtion(r: number): number {
+export default function(r: number): number {
     return Math.PI * r * r;
 }
 ```
@@ -112,7 +113,7 @@ npm.js is de package manager voor JavaScript. Het is de grootste software regist
 npm install <package-name>
 ```
 
-Wil je een bepaalde package zoeken dan kan je dat doen op de [npmjs website](https://www.npmjs.com/). Je vind er ook uitgebreide documentatie over de packages en hoe je deze kan gebruiken. 
+Wil je een bepaalde package zoeken dan kan je dat doen op de [npmjs website](https://www.npmjs.com/). Je vind er ook uitgebreide documentatie over de packages en hoe je deze kan gebruiken.
 
 ![alt text](../.gitbook/assets/npmjs.png)
 
@@ -144,7 +145,7 @@ Je kan alle dependencies installeren aan de hand van het volgende commando. Dus 
 npm install
 ```
 
-## node_modules
+## node\_modules
 
 Wanneer je een package installeert met npm dan wordt deze package geïnstalleerd in een map genaamd `node_modules`. Deze map bevat alle packages die je nodig hebt voor je project. Je moet deze map niet zelf aanmaken. npm doet dit automatisch voor je.
 
@@ -195,16 +196,16 @@ Dit zal de naam `Jelle` in het rood tonen in de terminal.
 Af en toe kom je in contact met een npm package die geen meegeleverde types hebben. Dit is bijvoorbeeld het geval bij de `readline-sync` package. In dat geval kan je gebruik maken van de `@types` (ook gekend als DefinitelyTyped) packages. Deze bevatten de types die bij de npm package horen. Je moet deze dan wel altijd apart installeren.
 
 ```bash
-npm install --save-dev @types/readline-sync
+npm install -D @types/readline-sync
 ```
 
 Een overzicht van alle `@types` packages die je nodig hebt in deze cursus:
 
 ```bash
-npm install --save-dev @types/node
-npm install --save-dev @types/readline-sync
-npm install --save-dev @types/express
-npm install --save-dev @types/ejs
+npm install -D @types/node
+npm install -D @types/readline-sync
+npm install -D @types/express
+npm install -D @types/ejs
 ...
 ```
 
@@ -223,11 +224,11 @@ declare module 'rainbow-colors-array';
 
 Dit is ook wat je vscode je aanraad als je over de error hovered als hij de types niet vindt:
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-03-17 at 16.16.10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot%202023-03-17%20at%2016.16.10.png" alt=""><figcaption></figcaption></figure>
 
 ## Voorbeeld: Lodash
 
-We gaan in dit voorbeeld de `lodash` package gebruiken. Deze package bevat heel veel handige functies die je kan gebruiken in je projecten. Het is een soort zwitsers zakmes voor JavaScript. 
+We gaan in dit voorbeeld de `lodash` package gebruiken. Deze package bevat heel veel handige functies die je kan gebruiken in je projecten. Het is een soort zwitsers zakmes voor JavaScript.
 
 We installeren deze library aan de hand van het volgende commando.
 
@@ -238,7 +239,7 @@ npm install lodash
 Deze library heeft geen ingebouwde types. We moeten deze dus apart installeren.
 
 ```bash
-npm install --save-dev @types/lodash
+npm install -D @types/lodash
 ```
 
 Vaak is de documentatie bedoeld voor een ouder module systeem. We moeten dan de documentatie aanpassen naar het nieuwe module systeem.
@@ -253,7 +254,7 @@ Dit moeten we aanpassen naar het nieuwe module systeem.
 import _ from 'lodash';
 ```
 
-Vervolgens kunnen we de functies gebruiken zoals beschreven in de documentatie. 
+Vervolgens kunnen we de functies gebruiken zoals beschreven in de documentatie.
 
 Bv de `reverse` functie.
 
@@ -270,9 +271,3 @@ console.log(_.round(4.006, 2));
 ```
 
 In die oefeningen zullen we nog een aantal handige functies van `lodash` bekijken.
-
-
-
-
-
-
