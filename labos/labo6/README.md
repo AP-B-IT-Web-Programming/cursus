@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # 5. TS: Modules & NPM
 
 {% hint style="info" %}
@@ -9,7 +5,7 @@ hidden: true
 
 Bekijk voor het labo aan te vangen eerst de volgende topics:
 
-* [Modules](../../nodejs-+-typescript/modules.md)
+* [Modules](../../cursus/wat-is-nodejs/modules.md)
 {% endhint %}
 
 ## Oefeningen
