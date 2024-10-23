@@ -147,7 +147,7 @@ import Planet from './planet';
 
 ## Npm Packages
 
-## npm.js
+### npm.js
 
 npm.js is de package manager voor JavaScript. Het is de grootste software registry ter wereld. Hier vind je heel veel packages die je kan gebruiken in je projecten. Je kan deze packages installeren aan de hand van het volgende commando.
 
@@ -159,7 +159,7 @@ Wil je een bepaalde package zoeken dan kan je dat doen op de [npmjs website](htt
 
 ![alt text](../.gitbook/assets/npmjs.png)
 
-## package.json
+### package.json
 
 Elk project heeft een `package.json` bestand. Dit bestand bevat alle informatie over je project. Het bevat ook een lijst van alle packages die je nodig hebt voor je project. Wanneer je een package installeert met npm dan wordt deze package toegevoegd aan dit bestand in de `dependencies` sectie.
 
@@ -187,13 +187,43 @@ Je kan alle dependencies installeren aan de hand van het volgende commando. Dus 
 npm install
 ```
 
-## node\_modules
+### SemVer
+
+**= Semantic Versioning**
+
+De versienummer van een node module wordt samengesteld volgens semantic versioning met formaat: {major}.{minor}.{patch} . Bijvoorbeeld : 1.4.10
+
+Major versienummer : grote wijzigingen, bestaande code zal waarschijnlijke breken
+
+Minor versienummer : verbeteringen, compatibel met bestaande code
+
+Patch versienummer : kleine aanpassingen, compatibel met bestaande code
+
+
+
+**Welke versie gebruiken?**
+
+```json
+"dependencies": {
+    "chalk": "4.1.0",
+    "chalk": "^4.1.0",
+    "chalk": "~4.1.0"
+}
+```
+
+Versienummer : gebruik exact deze versie
+
+^Versienummer : gebruik de laatste versie van de patch release ( bv 4.1.x )
+
+\~Versienummer : gebruik de laatste versie van de minor release ( bv 4.x.x )
+
+### node\_modules
 
 Wanneer je een package installeert met npm dan wordt deze package geïnstalleerd in een map genaamd `node_modules`. Deze map bevat alle packages die je nodig hebt voor je project. Je moet deze map niet zelf aanmaken. npm doet dit automatisch voor je.
 
 Omdat alle dependencies opgegeven staan in het `package.json` bestand en je deze ten allen tijde kan installeren aan de hand van het `npm install` commando, moet je deze map ook niet toevoegen aan je git repository. Het is een goed idee om deze map toe te voegen aan je `.gitignore` bestand. Voeg deze map ook nooit toe aan een zip bestand dat je doorstuurt naar iemand anders. Deze persoon kan dan zelf de dependencies installeren aan de hand van het `npm install` commando.
 
-## Importeren van npm packages
+### Importeren van npm packages
 
 Dit is ook de manier hoe je meestal npm packages importeert. Daar maakte het ook nooit uit welke naam je achter de import zette.
 
