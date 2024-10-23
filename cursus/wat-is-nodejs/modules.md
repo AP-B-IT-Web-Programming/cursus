@@ -103,6 +103,48 @@ We plaatsen deze interfaces vaak in een apart bestand met de naam `types.ts`. We
 import { Person } from './types';
 ```
 
+### Classes exporteren
+
+Net zoals functies en interfaces kunnen we ook onze classes in een apart bestand zetten en vervolgens importeren.
+
+```typescript
+export class Planet {
+    #name: string;
+    constructor(name: string) {
+        this.#name = name;
+    }
+}
+```
+
+Bij classes is de regel dat elke class in een apart bestand komt te staan. Gebruik ook de naam van class als bestandsnaam. In dit geval dus het bestand 'planet.ts'.
+
+Importeren is op dezelfde manier als bij de interface:
+
+```typescript
+import { Planet } from './planet';
+```
+
+{% hint style="info" %}
+Opgelet voor de naamgeving ! Een class is steeds met een hoofdletter!
+{% endhint %}
+
+Aangezien er steeds maar één class per bestand zal zijn, kan je kiezen om via default export te werken. De naam van de class valt dan weg, maar je kan de naam van de class herkennen aan de bestandsnaam.
+
+```typescript
+export default class {
+    #name: string;
+    constructor(name: string) {
+        this.#name = name;
+    }
+}
+```
+
+De import wordt dan anders want de accolades vallen weg!
+
+```typescript
+import Planet from './planet';
+```
+
 ## Npm Packages
 
 ## npm.js
