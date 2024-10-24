@@ -128,10 +128,10 @@ import { Planet } from './planet';
 Opgelet voor de naamgeving ! Een class is steeds met een hoofdletter!
 {% endhint %}
 
-Aangezien er steeds maar één class per bestand zal zijn, kan je kiezen om via default export te werken. De naam van de class valt dan weg, maar je kan de naam van de class herkennen aan de bestandsnaam.
+Aangezien er steeds maar één class per bestand zal zijn, kan je kiezen om via default export te werken. De naam van de class moet wel behouden worden, maar bij de import kan je zelf de naam van de class kiezen.
 
 ```typescript
-export default class {
+export default class Planet {
     #name: string;
     constructor(name: string) {
         this.#name = name;
@@ -139,7 +139,7 @@ export default class {
 }
 ```
 
-De import wordt dan anders want de accolades vallen weg!
+En bij de import vallen de accolades weg!
 
 ```typescript
 import Planet from './planet';
