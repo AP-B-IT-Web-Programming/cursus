@@ -4,7 +4,7 @@
 
 In dit hoofdstuk maken we gebruik van Surge.sh om onze webpage te hosten.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot from surge.sh</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Screenshot from surge.sh</p></figcaption></figure>
 
 [Surge.sh](https://www.surge.sh) is een cloud-gebaseerde dienst die eenvoudig en snel statische websites kan hosten. Het is populair onder ontwikkelaars omdat het een zeer eenvoudige interface biedt voor het deployen van statische sites, zoals HTML, CSS, en JavaScript projecten, naar het web.
 
