@@ -29,7 +29,6 @@
   * [VITE](cursus/frontend/vite.md)
   * [Deployment met Surge](cursus/frontend/deployment-met-surge.md)
   * [DOM Manipulatie](cursus/frontend/dom-manipulatie.md)
-  * [Fetch APIs](cursus/frontend/fetch-apis.md)
 * [Backend](cursus/backend/README.md)
   * [Express.js](cursus/backend/wat-is-een-backend-framework/README.md)
     * [Basis](cursus/backend/wat-is-een-backend-framework/basis.md)

@@ -40,3 +40,18 @@ ja, dit alles kan tevens in 1 commando:&#x20;
 surge /dist mijngewenstdomein.surge.sh
 ```
 
+## CORS
+
+CORS staat voor Cross-Origin Resource Sharing.
+
+Deze techniek zorgt ervoor dat je alleen dingen van een andere server kunt halen als die server dat toestaat. Dit is een **beveiligingsmaatregel** om te voorkomen dat iemand stiekem gegevens steelt of misbruik maakt van een website.
+
+Als je bestanden (bijvoorbeeld json) wilt hosten in surge, moet je een CORS bestand voorzien om toelating te geven aan andere websites om jouw bestanden aan te kunnen spreken.
+
+Voeg een nieuw bestand CORS toe in de dist folder en vul in dit bestand de domeinen toe die jouw gegevens mogen aanspreken.
+
+Mag iedereen er aan, zet dan \* in je CORS bestand.
+
+Na het aanmaken van dit bestand moet je uiteraard opnieuw **surge** uitvoeren om dit CORS bestand op je hosting te zetten.
+
+<figure><img src="../../.gitbook/assets/image001.png" alt=""><figcaption></figcaption></figure>
