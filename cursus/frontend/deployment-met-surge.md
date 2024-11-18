@@ -16,6 +16,12 @@ installeer éénmalig Surge door middel van het volgende commando
 npm i -g surge
 ```
 
+of mac gebruikers:
+
+```
+sudo npm i -g surge
+```
+
 ## Gebruik
 
 Geef in de terminal het volgende commando in:&#x20;
