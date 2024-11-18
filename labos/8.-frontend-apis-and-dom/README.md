@@ -32,4 +32,8 @@ Maak een nieuwe directory `labo8` aan in de root van je project.
 [cocktail-api-met-vite.md](cocktail-api-met-vite.md)
 {% endcontent-ref %}
 
-Het weer
+### Weersvoorspellingen
+
+{% content-ref url="weather-api.md" %}
+[weather-api.md](weather-api.md)
+{% endcontent-ref %}
