@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Multi-part form data
 
 Soms bestaat een formulier niet enkel uit tekstvelden, maar ook uit bestanden. Denk maar aan een formulier waar je een foto kan uploaden. In dit geval is het niet mogelijk om de data van het formulier te versturen via een GET request. We moeten dan gebruik maken van een POST request. Ook moeten we aangeven dat het formulier een bestand bevat. Dit doen we door de `enctype` van het formulier aan te passen.
@@ -149,4 +153,4 @@ De types van de `req.files` variabele zijn niet zo duidelijk. We kunnen de types
 
 ## Meer informatie
 
-- Voor meer informatie over `multer`, kan je terecht op de volgende pagina: [http://expressjs.com/en/resources/middleware/multer.html](http://expressjs.com/en/resources/middleware/multer.html)
+* Voor meer informatie over `multer`, kan je terecht op de volgende pagina: [http://expressjs.com/en/resources/middleware/multer.html](http://expressjs.com/en/resources/middleware/multer.html)

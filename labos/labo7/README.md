@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # 9. Backend: Express & Requests
 
 {% hint style="info" %}

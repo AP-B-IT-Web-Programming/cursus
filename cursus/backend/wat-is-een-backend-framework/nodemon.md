@@ -2,7 +2,7 @@
 
 Nodemon is een npm package die het ontwikkelen van een express applicatie makkelijker maakt. Het zorgt ervoor dat de server automatisch herstart wordt wanneer er een bestand veranderd wordt. Dit is handig omdat je dan niet telkens de server handmatig moet herstarten.
 
-## Installatie via scripts (voorkeur)
+## Installatie via scripts
 
 Als je nodemon wil gebruiken in je project kan je dit installeren met het volgende commando:
 
@@ -14,11 +14,11 @@ Vervolgens kan je in je `package.json` file een script toevoegen dat nodemon geb
 
 ```json
 "scripts": {
-    "start": "nodemon index.ts"
+    "start": "nodemon server.ts"
 }
 ```
 
-In dit voorbeeld wordt ervan uitgegaan dat de server file `index.js` heet. Vervang dit door de naam van jouw server file. Vervolgens kan je nodemon starten door het volgende commando uit te voeren in de terminal:
+In dit voorbeeld wordt ervan uitgegaan dat de server file `server.ts` heet. Vervang dit door de naam van jouw server file. Vervolgens kan je nodemon starten door het volgende commando uit te voeren in de terminal:
 
 ```bash
 npm start
@@ -37,10 +37,10 @@ npm install -g nodemon
 Nadat nodemon geïnstalleerd is kan het gebruikt worden door het volgende commando uit te voeren in de terminal:
 
 ```bash
-nodemon index.ts
+nodemon server.ts
 ```
 
-In dit voorbeeld wordt ervan uitgegaan dat de server file `index.js` heet. Vervang dit door de naam van jouw server file. Hij zal zelf de server starten en herstarten wanneer nodig. Je hoeft ook niet meer het `ts-node` commando te gebruiken, nodemon zal dit zelf doen.
+In dit voorbeeld wordt ervan uitgegaan dat de server file `server.ts` heet. Vervang dit door de naam van jouw server file. Hij zal zelf de server starten en herstarten wanneer nodig. Je hoeft ook niet meer het `ts-node` commando te gebruiken, nodemon zal dit zelf doen.
 
 ## Via npx
 

@@ -34,41 +34,39 @@ Om een router aan te maken, gebruik je de `express.Router` functie. Deze functie
 We maken een bestand `posts.ts` aan in de `routers` map en definiëren daar de routes voor de posts.
 
 ```typescript
-export default function postRouter(posts: Post[]) {
-    const router = express.Router();
+import express, {Router} from "express";
 
-    router.get("/", (req, res) => {
-        res.json(posts);
-    });
+export const router = express.Router();
 
-    router.get("/:id", (req, res) => {
-        const id = parseInt(req.params.id);
-        const post = posts.find(post => post.id === id);
-        if (post) {
-            res.json(post);
-        } else {
-            res.status(404).send("Post not found");
-        }
-    });
+router.get("/", (req, res) => {
+   res.json(posts);
+});
 
-    router.post("/", (req, res) => {
-        const newPost: Post = req.body;
-        posts.push(newPost);
-        res.json(newPost);
-    });
+router.get("/:id", (req, res) => {
+   const id = parseInt(req.params.id);
+   const post = posts.find(post => post.id === id);
+   if (post) {
+       res.json(post);
+   } else {
+       res.status(404).send("Post not found");
+   }
+});
 
-    return router;
-}
+router.post("/", (req, res) => {
+   const newPost: Post = req.body;
+   posts.push(newPost);
+   res.json(newPost);
+});
 ```
 
 In je hoofdbestand kan je dan deze functie importeren en gebruiken om de routes te definiëren.
 
 ```typescript
-import postRouter from "./routers/posts";
+import {router} from "./routers/posts";
 ```
 
 ```typescript
-app.use("/posts", postRouter());
+app.use("/posts", router);
 ```
 
 Alle routes die je definieert in de `posts` router, zullen dan beginnen met `/posts`. Dus in het geval van het voorbeeld hierboven:

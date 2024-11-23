@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # EJS
 
 Dankzij Express kunnen we nu dynamisch HTML terugsturen naar de client. Bekijk eventjes dit voorbeeld:
@@ -28,7 +32,7 @@ Bij elke refresh verandert de waarde van het random getal. Kijk naar de source c
 let randomGetal = Math.random()*100;
 ```
 
-Deze lijn geeft een willekeurig getal terug. We gebruiken Math.random dat een random getal geeft tussen 0 en 1 en vermenigvuldigen dat met 100.&#x20;
+Deze lijn geeft een willekeurig getal terug. We gebruiken Math.random dat een random getal geeft tussen 0 en 1 en vermenigvuldigen dat met 100.
 
 ```typescript
 res.send(`Het random getal is ${randomGetal}`);
@@ -40,7 +44,7 @@ In plaats van een vaste string, geven we nu het randomgetal mee. Elke refresh vo
 
 Volledige web paginas in variabelen steken is niet ideaal. Wanneer je weet dat ook nog CSS en scripts erbij moeten, dan is het duidelijk dat we een andere oplossing nodig hebben. Express laat toe templates te gebruiken.
 
-&#x20;We kunnen bv een Hello World pagina maken:
+We kunnen bv een Hello World pagina maken:
 
 ```markup
 <html>
@@ -50,7 +54,7 @@ Hello world!
 </html>
 ```
 
-Maar wat als we nu een willekeurige boodschap willen tonen? &#x20;
+Maar wat als we nu een willekeurige boodschap willen tonen?
 
 ```markup
 <html>
@@ -249,9 +253,9 @@ Er bestaat ook een mogelijkheid om een loop toe te voegen. We hebben al gezien d
 <% } %>
 ```
 
-Het is belangrijk om te weten dat alle javascript code tussen `<% %>` moet staan en dus ook de for statement en het afsluiten van het `}` teken. 
+Het is belangrijk om te weten dat alle javascript code tussen `<% %>` moet staan en dus ook de for statement en het afsluiten van het `}` teken.
 
-Wil je de waarde van `i` tonen, dan moet je `<%= i %>` gebruiken. 
+Wil je de waarde van `i` tonen, dan moet je `<%= i %>` gebruiken.
 
 ```markup
 <% for(let i=1; i<10;i++) { %>

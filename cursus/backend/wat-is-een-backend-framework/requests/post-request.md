@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # POST Request
 
 ## POST Requests

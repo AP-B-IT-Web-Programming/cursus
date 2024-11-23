@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # GET Request
 
 Wanneer een gebruiker naar het domein van onze website surft, stuurt zijn browser een `GET`-request naar de route `/` van onze applicatie.
@@ -61,7 +65,7 @@ Probeer zelf eens een lijst van query velden toe te voegen aan de URL en print d
 {% endhint %}
 
 {% hint style="danger" %}
-Let op welke characters je gebruikt in een query string. Je kan bv. geen spaties gebruiken. Wil je in jouw client applicatie een random string meegeven als waarde, gebruik dan [URI Encode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/encodeURI) om deze om te zetten in een geldige string!
+Let op welke characters je gebruikt in een query string. Je kan bv. geen spaties gebruiken. Wil je in jouw client applicatie een random string meegeven als waarde, gebruik dan [URI Encode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) om deze om te zetten in een geldige string!
 {% endhint %}
 
 #### Use case - Zoeken
@@ -107,7 +111,7 @@ app.get("/", (req, res) => {
 });
 ```
 
-We gebruiken hier de `filter` methode van een array om enkel de namen te tonen die beginnen met de zoekterm. We zetten de zoekterm en de gefilterde namen in een object en sturen dit naar de view. 
+We gebruiken hier de `filter` methode van een array om enkel de namen te tonen die beginnen met de zoekterm. We zetten de zoekterm en de gefilterde namen in een object en sturen dit naar de view.
 
 Het is belangrijk om de zoekterm te normaliseren. We willen niet dat de zoekterm "Sven" niet gevonden wordt omdat de gebruiker "sven" heeft ingegeven. Daarom zetten we de zoekterm en de namen om naar kleine letters met de `toLowerCase` methode. Let hier op dat we zoeken op de beginletters van de namen. Als je wil zoeken op een deel van de naam, kan je de `includes` methode gebruiken.
 
@@ -124,7 +128,7 @@ const sortField = typeof req.query.sortField === "string" ? req.query.sortField 
 const sortDirection = typeof req.query.sortDirection === "string" ? req.query.sortDirection : "asc";
 ```
 
-We kijken hier of de query parameters bestaan. Als ze bestaan, gebruiken we de waarde. Als ze niet bestaan, gebruiken we een default waarde. We gebruiken de `sort` methode van een array om de namen te sorteren. De richting van de sortering bepalen we door de return waarde van de sorteerfunctie om te keren. Als de richting "asc" is, sorteren we de namen in oplopende volgorde. Als de richting "desc" is, sorteren we de namen in aflopende volgorde. 
+We kijken hier of de query parameters bestaan. Als ze bestaan, gebruiken we de waarde. Als ze niet bestaan, gebruiken we een default waarde. We gebruiken de `sort` methode van een array om de namen te sorteren. De richting van de sortering bepalen we door de return waarde van de sorteerfunctie om te keren. Als de richting "asc" is, sorteren we de namen in oplopende volgorde. Als de richting "desc" is, sorteren we de namen in aflopende volgorde.
 
 ```typescript
 let sortedPersons = [...persons].sort((a, b) => {
