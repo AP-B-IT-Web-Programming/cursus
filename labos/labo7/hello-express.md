@@ -4,7 +4,7 @@ Maak een nieuw project aan met de naam `helloExpress` en installeer express volg
 
 We bouwen in deze oefening onze eerste **express** applicatie. Hier onder vind je een overzicht over alle routes die deze applicatie moet aanbieden en wat ze allemaal moeten doen.
 
-In deze oefening is het nog niet de bedoeling om EJS te gebruiken. We gaan enkel HTML pagina's of json terugsturen.
+In deze oefening gaan enkel HTML pagina's of json terugsturen.
 
 **http://localhost:3000**
 

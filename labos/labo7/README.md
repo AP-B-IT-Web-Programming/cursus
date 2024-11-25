@@ -5,10 +5,10 @@
 
 Bekijk voor het labo aan te vangen eerst de volgende topics:
 
-* [Basis Express](../../express.js/basis.md)
-* [GET Requests](../../cursus/backend/wat-is-een-backend-framework/requests/get-request.md)
-* [POST Requests](../../cursus/backend/wat-is-een-backend-framework/requests/post-request.md)
-* [Multi-part Form Data](../../cursus/backend/wat-is-een-backend-framework/requests/multi-part-form-data.md)
+* [Basis Express](../../cursus/backend/wat-is-een-backend-framework/basis.md)
+* [Request](../../cursus/backend/wat-is-een-backend-framework/requests/)
+* [Response](../../cursus/backend/wat-is-een-backend-framework/response.md)
+* [Routing](../../cursus/backend/wat-is-een-backend-framework/router.md)
 {% endhint %}
 
 ## Oefeningen
@@ -27,4 +27,10 @@ Maak een nieuwe directory `labo9` aan in de root van je project.
 
 {% content-ref url="dadjoke-express.md" %}
 [dadjoke-express.md](dadjoke-express.md)
+{% endcontent-ref %}
+
+### Reiskosten Express
+
+{% content-ref url="reiskosten-server.md" %}
+[reiskosten-server.md](reiskosten-server.md)
 {% endcontent-ref %}
