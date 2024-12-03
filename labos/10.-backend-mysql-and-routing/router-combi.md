@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Router Combi
 
 We gaan een combinatie oefening maken van drie voorgaande oefeningen: [Math Service](../labo7/labo9/math-service-express.md), [News Paper Search](../labo7/labo9/newspaper-search.md) en [Contact Form](../labo7/labo10/contact-form.md).
