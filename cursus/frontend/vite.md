@@ -4,7 +4,7 @@
 
 VITE is een moderne frontend tool die ontworpen is om de ontwikkeling van webapplicaties drastisch te versnellen. Het maakt gebruik van native ES modules, waardoor het direct bestanden naar de browser kan sturen zonder dat er een volledige bundel hoeft te worden gemaakt. Dit resulteert in een razendsnelle webserverstart en een extreem snelle Hot Module Replacement (HMR), wat betekent dat wijzigingen in je code bijna direct zichtbaar zijn in de browser.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 VITE biedt een uitgebreide featureset, waaronder ondersteuning voor TypeScript en CSS, en is het zeer flexibel dankzij een groot aantal plugins. VITE is dus een krachtige en gebruiksvriendelijke tool die het ontwikkelproces aanzienlijk efficiënter maakt.
 
