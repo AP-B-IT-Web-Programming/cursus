@@ -98,6 +98,7 @@
   * [Uitvinders](labos/8.-frontend-apis-and-dom/uitvinders.md)
   * [Cocktail API met Vite](labos/8.-frontend-apis-and-dom/cocktail-api-met-vite.md)
   * [Weather API](labos/8.-frontend-apis-and-dom/weather-api.md)
+  * [Rick and Morty](labos/8.-frontend-apis-and-dom/rick-and-morty.md)
 * [9. Backend: Express & Requests](labos/labo7/README.md)
   * [Hello Express](labos/labo7/hello-express.md)
   * [DadJoke Express](labos/labo7/dadjoke-express.md)
