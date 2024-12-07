@@ -51,7 +51,7 @@ interface MyFormData {
   email: string;
 }
 
-const formElement = document.querySelector('#myFrom');
+const formElement = document.querySelector('#myForm');
 const formMessage = document.querySelector('#responseMessage');
 
 formElement.addEventListener("submit", async (event) => {
