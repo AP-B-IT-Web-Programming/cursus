@@ -26,6 +26,12 @@ npm install mysql2
 **Opgelet !** Gebruik de **mysql2** library en niét de mysql library. De mysql library is verouderd !!
 {% endhint %}
 
+Vergeet zeker niet je node types te installeren om fouten te vermijden.
+
+```bash
+npm install -D @types/node
+```
+
 ## Connecteren
 
 De eerste stap is connecteren vanuit je node server naar je database.
