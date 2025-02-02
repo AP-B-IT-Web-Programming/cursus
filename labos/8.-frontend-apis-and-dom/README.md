@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 8. Frontend: APIs & DOM
 
 {% hint style="info" %}

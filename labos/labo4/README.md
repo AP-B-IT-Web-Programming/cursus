@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 3. TS: Interfaces & classes
 
 {% hint style="info" %}

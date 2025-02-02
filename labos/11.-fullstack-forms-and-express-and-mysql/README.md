@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 11. Fullstack: Forms & Express & MySQL
 
 {% hint style="info" %}
