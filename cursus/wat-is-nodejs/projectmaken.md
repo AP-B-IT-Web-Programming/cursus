@@ -46,6 +46,16 @@ Mac gebruikers denk aan het sudo commando!
 Je kan npm install ook korter schrijven : **npm i**
 {% endhint %}
 
+### Wat als je een fout krijgt bij installatie?
+
+Mogelijk moet je je terminal meer rechten geven.
+
+Gebruik hiervoor dit commando:
+
+```bash
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+```
+
 ## npm init
 
 Nu gaan we een nieuw project aanmaken. Dit doen we aan de hand van het `npm init` commando.
