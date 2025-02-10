@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # 2. TS: Arrays & functions
 
 {% hint style="info" %}
