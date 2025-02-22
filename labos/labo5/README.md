@@ -14,16 +14,16 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 
 Maak een nieuwe directory `labo4` aan in de root van je project.
 
-### slowSum
-
-{% content-ref url="slow-sum.md" %}
-[slow-sum.md](slow-sum.md)
-{% endcontent-ref %}
-
 ### **Promise All**
 
 {% content-ref url="promise-all.md" %}
 [promise-all.md](promise-all.md)
+{% endcontent-ref %}
+
+### slowSum
+
+{% content-ref url="slow-sum.md" %}
+[slow-sum.md](slow-sum.md)
 {% endcontent-ref %}
 
 ### **Cocktails Promise All**
