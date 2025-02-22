@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # 4. TS: Async & fetch
 
 {% hint style="info" %}
