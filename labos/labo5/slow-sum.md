@@ -5,7 +5,7 @@ Maak een nieuw project aan met de naam `slow-sum` waarin je jouw bronbestanden v
 Plaats de onderstaande code in een bestand `index.ts`
 
 ```typescript
-function slowSum(a: number, b: number) {
+function slowSum(a: number, b: number): Promise<number> {
     return new Promise<number>((resolve, reject) => {
         setTimeout(() => {
             resolve(a+b);
@@ -13,7 +13,7 @@ function slowSum(a: number, b: number) {
     });
 }
 
-function slowMult(a: number, b: number) {
+function slowMult(a: number, b: number): Promise<number> {
     return new Promise<number>((resolve, reject) => {
         setTimeout(() => {
             resolve(a*b);
