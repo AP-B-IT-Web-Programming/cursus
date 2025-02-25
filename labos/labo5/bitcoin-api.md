@@ -1,4 +1,8 @@
-### Oefening: Bitcoin Api
+---
+hidden: true
+---
+
+# Bitcoin API
 
 Maak een nieuw project `bitcoin-api` waarin je jouw bronbestanden voor deze oefening kan plaatsen.
 
@@ -6,7 +10,7 @@ Bij het opstarten van de applicatie wordt er gevraagd welke valuta je wilt zien.
 
 [Coindesk API](https://api.coindesk.com/v1/bpi/currentprice.json)
 
-#### Voorbeeld interactie
+## Voorbeeld interactie
 
 ```
 Welke valuta wil je zien? (EUR, USD, GBP): USD
