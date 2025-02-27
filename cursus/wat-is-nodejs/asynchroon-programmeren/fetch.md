@@ -1,12 +1,12 @@
 # Fetch
 
-Net zoals in de browser is het mogelijk om in Node.js een HTTP request te doen naar een andere server. Dit doe je met de `fetch` functie. Deze functie heeft als argument een URL. De functie geeft een Promise terug die een Response object bevat. Dit object bevat de data die je terugkrijgt van de server. In TypeScript is het wel belangrijk dat je het type van de data opgeeft die je verwacht terug te krijgen. Je moet dus een interface voorzien die de data beschrijft. 
+Net zoals in de browser is het mogelijk om in Node.js een HTTP request te doen naar een andere server. Dit doe je met de `fetch` functie. Deze functie heeft als argument een URL. De functie geeft een Promise terug die een Response object bevat. Dit object bevat de data die je terugkrijgt van de server. In TypeScript is het wel belangrijk dat je het type van de data opgeeft die je verwacht terug te krijgen. Je moet dus een interface voorzien die de data beschrijft.
 
-De syntax is grotendeels hetzelfde als in JavaScript. Het enige verschil is dat je het type van de data moet opgeven. 
+De syntax is grotendeels hetzelfde als in JavaScript. Het enige verschil is dat je het type van de data moet opgeven.
 
 ## Interface
 
-We gaan in dit voorbeeld gebruik maken van de [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API. Deze API bevat een aantal endpoints die je kan gebruiken om data op te halen. We gaan in dit voorbeeld gebruik maken van de `/posts` endpoint. Deze endpoint geeft een lijst van gebruikers terug. 
+We gaan in dit voorbeeld gebruik maken van de [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API. Deze API bevat een aantal endpoints die je kan gebruiken om data op te halen. We gaan in dit voorbeeld gebruik maken van de `/posts` endpoint. Deze endpoint geeft een lijst van gebruikers terug.
 
 ```json
 [
@@ -32,7 +32,7 @@ We gaan in dit voorbeeld gebruik maken van de [JSONPlaceholder](https://jsonplac
 ]
 ```
 
-Het eerste wat je moet doen is een interface maken die de data beschrijft die je verwacht terug te krijgen. In dit geval is dit een array van objecten. Elk object heeft een userId, id, title en body property. De userId en id property zijn van het type number. De title en body property zijn van het type string. 
+Het eerste wat je moet doen is een interface maken die de data beschrijft die je verwacht terug te krijgen. In dit geval is dit een array van objecten. Elk object heeft een userId, id, title en body property. De userId en id property zijn van het type number. De title en body property zijn van het type string.
 
 ```typescript
 interface Post {
@@ -47,7 +47,7 @@ Je kan deze interface zelf maken, maar je kan ook gebruik maken van een tool zoa
 
 ### Fetch
 
-Nu kunnen we de fetch functie gebruiken om de data op te halen. We geven als argument de URL van de endpoint mee. Omdat de fetch functie een Promise teruggeeft, kunnen we de then functie gebruiken om de data te gebruiken. Omdat over het algemeen de data die je terugkrijgt van een server een JSON object is, moeten we de data eerst omzetten naar een JavaScript object. Dit doen we met de `json` functie. Deze functie geeft ook een Promise terug. We kunnen dus de then functie gebruiken om de data te gebruiken. 
+Nu kunnen we de fetch functie gebruiken om de data op te halen. We geven als argument de URL van de endpoint mee. Omdat de fetch functie een Promise teruggeeft, kunnen we de then functie gebruiken om de data te gebruiken. Omdat over het algemeen de data die je terugkrijgt van een server een JSON object is, moeten we de data eerst omzetten naar een JavaScript object. Dit doen we met de `json` functie. Deze functie geeft ook een Promise terug. We kunnen dus de then functie gebruiken om de data te gebruiken.
 
 Stel dat we de titel van de eerste post willen loggen naar de console. We kunnen dit doen met de volgende code:
 
@@ -75,11 +75,11 @@ of met async en await:
 })();
 ```
 
-Let op dat een API niet altijd een array teruggeeft. Het kan ook een object zijn dat op zijn beurt weer een array bevat. Je moet dus altijd controleren wat de data is die je terugkrijgt. 
+Let op dat een API niet altijd een array teruggeeft. Het kan ook een object zijn dat op zijn beurt weer een array bevat. Je moet dus altijd controleren wat de data is die je terugkrijgt.
 
 ## Error afhandelen
 
-De catch functie is nodig om een error af te handelen. Onder een errors vallen alleen errors die veroorzaakt worden op netwerk niveau. Dus bijvoorbeeld als de server niet bereikbaar is of als de URL niet bestaat. 
+De catch functie is nodig om een error af te handelen. Onder een errors vallen alleen errors die veroorzaakt worden op netwerk niveau. Dus bijvoorbeeld als de server niet bereikbaar is of als de URL niet bestaat.
 
 Als je toch een error wil afhandelen die veroorzaakt wordt door een fout in de code van de server, dan moet je de status code van de response controleren. Als de status code 2xx is, dan is er geen error. Als de status code iets anders is, dan is er een error.
 
@@ -110,7 +110,7 @@ Deze code is ook weer sterk te vereenvoudigen met async en await:
 })();
 ```
 
-Je kan ook de `status` property gebruiken om de status code op te vragen. Deze property bevat een nummer. 
+Je kan ook de `status` property gebruiken om de status code op te vragen. Deze property bevat een nummer.
 
 ```typescript
 (async function () {
@@ -130,7 +130,7 @@ Je kan ook de `status` property gebruiken om de status code op te vragen. Deze p
 
 ## Een voorbeeld met paging
 
-We gaan nu een iets complexer voorbeeld bekijken. We gaan deze keer eens de `https://reqres.in/api/users` API gebruiken. Als je naar de response kijkt, dan zie je dat deze geen array teruggeeft, maar een object. Dit object bevat een array met de key `data` en ook een andere properties zoals `page`, `per_page`, `total` en `total_pages`. Het data object bevat een array van gebruikers. 
+We gaan nu een iets complexer voorbeeld bekijken. We gaan deze keer eens de `https://reqres.in/api/users` API gebruiken. Als je naar de response kijkt, dan zie je dat deze geen array teruggeeft, maar een object. Dit object bevat een array met de key `data` en ook een andere properties zoals `page`, `per_page`, `total` en `total_pages`. Het data object bevat een array van gebruikers.
 
 Hier kan je de volgende interface voor gebruiken:
 
@@ -152,7 +152,7 @@ interface RootObject {
 }
 ```
 
-We gaan nu de gebruikers ophalen en de gebruikers te loggen naar de console. 
+We gaan nu de gebruikers ophalen en de gebruikers te loggen naar de console.
 
 ```typescript
 async function main() {
@@ -170,7 +170,7 @@ async function main() {
 main();
 ```
 
-Merk op dat we hier wel geen rekening hebben gehouden met de pagina's. Als je naar de response kijkt zie je dat hier een `page` property in zit. Deze property geeft aan op welke pagina je zit. Als je naar de URL kijkt, dan zie je dat er een `page` query parameter in zit. Deze parameter geeft aan op welke pagina je zit. Als je deze parameter aanpast, dan krijg je een andere pagina terug. Je zou hier dus een loop kunnen maken die alle pagina's afgaat. 
+Merk op dat we hier wel geen rekening hebben gehouden met de pagina's. Als je naar de response kijkt zie je dat hier een `page` property in zit. Deze property geeft aan op welke pagina je zit. Als je naar de URL kijkt, dan zie je dat er een `page` query parameter in zit. Deze parameter geeft aan op welke pagina je zit. Als je deze parameter aanpast, dan krijg je een andere pagina terug. Je zou hier dus een loop kunnen maken die alle pagina's afgaat.
 
 ```typescript
 async function main() {
@@ -197,3 +197,41 @@ main();
 ```
 
 Let wel op dat elk paging systeem anders is. Je moet dus altijd controleren hoe het paging systeem werkt.
+
+## Hoe bouw je je code nu best op? / Best Practices
+
+De onderstaande code haalt informatie over "lemon"-cocktails op die een bepaald ingrediënt bevatten en toont de namen van de ontvangen cocktails gescheiden door een komma terug.
+
+1. **Interfaces**: Er zijn twee `interfaces` gedefinieerd, `Cocktail` en `ResponseFormApi`. Deze beschrijven de structuur van de gegevens die uit de API worden verkregen.
+2. **Functie getCocktailByIngredient**: Dit is een asynchrone functie die gegevens ophaalt van de Cocktail API. Het neemt een ingrediënt als een parameter (als een `string`) en stuurt een verzoek naar de API om alle cocktails te krijgen die dat ingrediënt bevatten. De functie heeft als return datatype een Promise dat uiteindelijk **ResponseFormApi** zal ontvangen.
+3. **Functie main**: In de `main`-functie wordt de `getCocktailByIngredient`-functie aangeroepen met "lemon" als ingrediënt. Vervolgens worden de namen van de cocktails met "lemon" als ingrediënt verzameld en samen met een komma ertussen op het scherm geprint.
+
+Kortom, het programma haalt de namen op van alle cocktails die "lemon" bevatten en laat deze zien.
+
+```javascript
+interface Cocktail {
+  strDrink: string;
+  idDrink: string;
+  strDrinkThumb: string;
+}
+interface ResponseFormApi {
+  drinks: Cocktail[];
+}
+
+async function getCocktailByIngredient(str: string): Promise<ResponseFormApi> {
+  const response = await fetch(
+    "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + str
+  );
+  const data = await response.json();
+  return data;
+}
+
+async function main() {
+  const lemonCocktails = await getCocktailByIngredient("lemon");
+  console.log(
+    lemonCocktails.drinks.map((cocktail) => cocktail.strDrink).join(", ")
+  );
+}
+
+main();
+```
