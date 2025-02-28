@@ -219,11 +219,15 @@ interface ResponseFormApi {
 }
 
 async function getCocktailByIngredient(str: string): Promise<ResponseFormApi> {
-  const response = await fetch(
-    "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + str
-  );
-  const data = await response.json();
-  return data;
+  try{
+    const response = await fetch(
+      "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=" + str
+    );
+    const data = await response.json();
+    return data;
+  }catch(error){
+    throw error
+  }
 }
 
 async function main() {
