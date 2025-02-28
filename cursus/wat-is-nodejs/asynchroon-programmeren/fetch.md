@@ -227,10 +227,15 @@ async function getCocktailByIngredient(str: string): Promise<ResponseFormApi> {
 }
 
 async function main() {
-  const lemonCocktails = await getCocktailByIngredient("lemon");
-  console.log(
-    lemonCocktails.drinks.map((cocktail) => cocktail.strDrink).join(", ")
-  );
+  try{
+    const lemonCocktails = await getCocktailByIngredient("lemon");
+    console.log(
+      lemonCocktails.drinks.map((cocktail) => cocktail.strDrink).join(", ")
+    );
+  }
+  catch (error) {
+    console.log("Error fetching cocktaildata")
+  }  
 }
 
 main();
