@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # 5. TS: Modules & NPM
 
 {% hint style="info" %}
