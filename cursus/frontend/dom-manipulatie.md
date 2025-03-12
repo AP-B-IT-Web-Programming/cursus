@@ -234,9 +234,9 @@ mydiv.style.backgroundColor = 'red';
 * classList : om via CSS stijl aan te passen maken we eerst een CSS class aan in het CSS bestand en vervolgens kan je via de classList property deze class toevoegen en verwijderen, bv:
 
 ```typescript
-mydiv.classList.add(".mycssclass");
-mydiv.classList.remove(".mycssclass");
-mydiv.classList.toggle(".mycssclass"); //voeg toe als class niet in list zit, indien wel in list wordt deze verwijderd
+mydiv.classList.add("mycssclass");
+mydiv.classList.remove("mycssclass");
+mydiv.classList.toggle("mycssclass"); //voeg toe als class niet in list zit, indien wel in list wordt deze verwijderd
 ```
 
 * innerHTML : hiermee voeg je HTML tekst toe aan het element, bv:
