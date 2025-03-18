@@ -88,7 +88,7 @@
   * [Cat GPT](labos/labo6/cat-gpt.md)
   * [Rainbow Chalk](labos/labo6/rainbow-chalk.md)
 * [6. TS: Herhaling](labos/6.-ts-herhaling.md)
-* [7. Frontend: VITE & DOM](labos/7.-frontend-vite-and-dom/README.md)
+* [6. Frontend: VITE & DOM](labos/7.-frontend-vite-and-dom/README.md)
   * [Verander achtergrond](labos/7.-frontend-vite-and-dom/verander-achtergrond.md)
   * [Verander tekst](labos/7.-frontend-vite-and-dom/verander-tekst.md)
   * [Verander divs](labos/7.-frontend-vite-and-dom/verander-divs.md)

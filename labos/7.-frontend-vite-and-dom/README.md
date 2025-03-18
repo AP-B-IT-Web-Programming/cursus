@@ -1,8 +1,4 @@
----
-hidden: true
----
-
-# 7. Frontend: VITE & DOM
+# 6. Frontend: VITE & DOM
 
 
 
