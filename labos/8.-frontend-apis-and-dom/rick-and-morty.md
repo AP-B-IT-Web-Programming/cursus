@@ -24,34 +24,20 @@ De API antwoordt met volgende JSON:
 
 ]
 
-}
-
-&#x20;
-
-&#x20;
+}&#x20;
 
 Opdrachten:
 
-1\.    Toon de resultaten van de API in een lijst.
+1. Toon de resultaten van de API in een lijst
+2. Voeg filtering toe:
+   1. Voorzien een invulveld
+   2. Voeg een zoeken knop toe
+   3. Als je op de zoeken knop drukt, dan voer je de API opnieuw uit een geef je de ingevulde waarde mee in 'name'
+3. Voeg paginering toe:
+   1. Toon het aantal resultaten
+   2. Toon de huidige pagina
+   3. Toon het max aantal pagina's
+   4. Voeg knoppen vorige / volgende toe
+   5. Telkens je op een knop drukt voor je de API opnieuw uit met de aangepaste pagina in 'page'
+   6. Zorg ervoor dat de vorige / volgende knoppen inactief worden als er geen vorige of volgende pagina is.
 
-2\.    Voeg filtering toe:
-
-a.    voorzie een invulveld
-
-b.    voeg een zoeken knop toe
-
-c.     als je op de zoeken knop drukt, dan voer je de API opnieuw uit en geeft de ingevulde waarde mee in ‘name’
-
-3\.    Voeg paginering toe:
-
-a.    toon het aantal resultaten
-
-b.    toon de huidige pagina
-
-c.     toon het max aantal paginas
-
-d.    voeg knoppen vorige / volgende toe
-
-e.    telkens dat op de knop gedrukt wordt, voer je de API opnieuw uit met de aangepaste pagina in ‘page’
-
-f.      zorg ervoor dat je knoppen actief/inactief worden als er geen vorige/volgende pagina is
