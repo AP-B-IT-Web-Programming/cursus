@@ -28,12 +28,18 @@ Maak een nieuwe directory `labo8` aan in de root van je project.
 
 ### Weersvoorspellingen
 
-{% content-ref url="weather-api/" %}
-[weather-api](weather-api/)
+{% content-ref url="weather-api.md" %}
+[weather-api.md](weather-api.md)
 {% endcontent-ref %}
 
 ### Uitvinders (herhalingsoefening)
 
-{% content-ref url="weather-api/uitvinders.md" %}
-[uitvinders.md](weather-api/uitvinders.md)
+{% content-ref url="uitvinders.md" %}
+[uitvinders.md](uitvinders.md)
+{% endcontent-ref %}
+
+### Rick and Morty
+
+{% content-ref url="rick-and-morty.md" %}
+[rick-and-morty.md](rick-and-morty.md)
 {% endcontent-ref %}

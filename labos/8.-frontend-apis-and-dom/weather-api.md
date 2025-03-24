@@ -8,6 +8,6 @@ Onderzoek de API en zorg dat je de voorspellingen van de komende  7 dagen op je 
 
 Toon de gegevens in een tabel.
 
-Je mag ook proberen de temperatuursvoorspellingen in een grafiek te krijgen. Je vindt op w3schools enkele populaire externe tools terug, waarbij charts.js de makkelijkste in gebruik is :[https://www.w3schools.com/graphics/plot\_graphics.asp](https://www.w3schools.com/graphics/plot\_graphics.asp)
+Je mag ook proberen de temperatuursvoorspellingen in een grafiek te krijgen. Je vindt op w3schools enkele populaire externe tools terug, waarbij charts.js de makkelijkste in gebruik is :[https://www.w3schools.com/graphics/plot\_graphics.asp](https://www.w3schools.com/graphics/plot_graphics.asp)
 
 Als dat goed lukt kan je uiteraard ook andere gegevens opvragen zoals bv verwachte neerslag.

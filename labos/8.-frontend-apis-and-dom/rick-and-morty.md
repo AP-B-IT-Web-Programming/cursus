@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Rick and Morty
 
 Het doel van deze oefening is om een applicatie te bouwen voor het tonen van alle personages uit de tekenfilmserie ‘Rick and Morty’.
