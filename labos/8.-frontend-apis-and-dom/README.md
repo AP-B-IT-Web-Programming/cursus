@@ -1,8 +1,4 @@
----
-hidden: true
----
-
-# 8. Frontend: APIs & DOM
+# 7. Frontend: APIs & DOM
 
 {% hint style="info" %}
 ## Theorie
@@ -24,12 +20,6 @@ Maak een nieuwe directory `labo8` aan in de root van je project.
 
 **Maak voor elke oefening een nieuw VITE project aan!**
 
-### Uitvinders (herhalingsoefening)
-
-{% content-ref url="uitvinders.md" %}
-[uitvinders.md](uitvinders.md)
-{% endcontent-ref %}
-
 ### Cocktail API met VITE
 
 {% content-ref url="cocktail-api-met-vite.md" %}
@@ -38,6 +28,12 @@ Maak een nieuwe directory `labo8` aan in de root van je project.
 
 ### Weersvoorspellingen
 
-{% content-ref url="weather-api.md" %}
-[weather-api.md](weather-api.md)
+{% content-ref url="weather-api/" %}
+[weather-api](weather-api/)
+{% endcontent-ref %}
+
+### Uitvinders (herhalingsoefening)
+
+{% content-ref url="weather-api/uitvinders.md" %}
+[uitvinders.md](weather-api/uitvinders.md)
 {% endcontent-ref %}
