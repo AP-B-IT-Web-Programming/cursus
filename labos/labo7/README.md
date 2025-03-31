@@ -1,4 +1,4 @@
-# 9. Backend: Express & Requests
+# 8. Backend: Express & Requests
 
 {% hint style="info" %}
 ## Theorie
@@ -15,7 +15,7 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 
 ### Voorbereiding
 
-Maak een nieuwe directory `labo9` aan in de root van je project.
+Maak een nieuwe directory `labo8` aan in de root van je project.
 
 ### Hello Express
 
