@@ -1,8 +1,4 @@
----
-hidden: true
----
-
-# 10. Backend: MySQL & Routing
+# 9. Backend: MySQL & Routing
 
 {% hint style="info" %}
 ## Theorie
@@ -17,7 +13,7 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 
 ### Voorbereiding
 
-Maak een nieuwe directory `labo10` aan in de root van je project.
+Maak een nieuwe directory `labo9` aan in de root van je project.
 
 ### Reiskosten server mét database
 

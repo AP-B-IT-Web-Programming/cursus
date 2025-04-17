@@ -2,7 +2,7 @@
 
 We maken een server aan om taken te beheren.
 
-Maak een nieuwe class Taak aan. Een taak heeft twee velden: omschrijving en naam (van wie de taak gaat doen).
+Maak een nieuwe interface Taak aan. Een taak heeft twee velden: omschrijving en naam (van wie de taak gaat doen).
 
 Maak ook een database tabel aan voor je taken.
 

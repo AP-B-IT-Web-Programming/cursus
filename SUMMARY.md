@@ -113,7 +113,7 @@
     * [Redirect Form](labos/labo7/labo10/redirect-form.md)
     * [Contact Form](labos/labo7/labo10/contact-form.md)
   * [Reiskosten server](labos/labo7/reiskosten-server.md)
-* [10. Backend: MySQL & Routing](labos/10.-backend-mysql-and-routing/README.md)
+* [9. Backend: MySQL & Routing](labos/10.-backend-mysql-and-routing/README.md)
   * [Router Combi](labos/10.-backend-mysql-and-routing/router-combi.md)
   * [Reiskosten server](labos/10.-backend-mysql-and-routing/reiskosten-server.md)
   * [Taken server](labos/10.-backend-mysql-and-routing/taken-server.md)
