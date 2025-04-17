@@ -84,13 +84,13 @@ Na het aanmaken van de connectie, kunnen we deze gebruiken om queries uit te voe
 Een select query met callback, wordt als volgt opgezet:
 
 ```typescript
-import mysql, {ConnectionOptions, Connection} from 'mysql2';
+import mysql, {ConnectionOptions, Connection, QueryError, QueryResult} from 'mysql2';
 const access: ConnectionOptions = { ... };
 const conn: Connection = mysql.createConnection(access);
 
-conn.query("SELECT * FROM planet", (error, results) => {
+conn.query("SELECT * FROM planet", (error: QueryError, result: QueryResult) => {
     if(error) throw error;
-    console.log(results);
+    console.log(result);
 });
 
 ```
@@ -99,7 +99,7 @@ Gebruik de query functie van de connection en geef twee parameters mee: de query
 
 Als eerste lijn zet je best een controle op je error. Er kan best wel wat mislopen bij het query-en van je database dus deze controle is nodig om die fouten op te vangen.
 
-Het results object zal het resultaat van je query bevatten. In geval van een select is dit een array van records.
+Het result object zal het resultaat van je query bevatten. In geval van een select is dit een array van records.
 
 Andere soorten query, zoals insert of delete, worden op dezelfde manier uitgevoerd.
 
@@ -116,7 +116,7 @@ const access: ConnectionOptions = { ... };
 async function run() {
     try {
         const conn: Connection = await mysql.createConnection(access);
-        const [results, fields] = await conn.query("SELECT * FROM planet");
+        const [result, fields]: (QueryResult | FieldPacket[])[] = await conn.query("SELECT * FROM planet");
     } catch (error) {
         console.log(error)
     }
@@ -131,9 +131,13 @@ Opgelet ! Gebruik de import _**mysql2/promise**_ om met async / await aan de sla
 
 Als we met promise werken zorgen we uiteraard eerst voor een async function waar de await statements in kunnen gezet worden.
 
-Een query via promise geeft een tuple terug van results en fields. Je kan ook de fields weg laten zodat je enkel \[results] opvangt. Maar het is steeds een tuple, zelfs als je enkel interesse hebt in de results.
+Een query via promise geeft een tuple terug van result en fields. Je kan ook de fields weg laten zodat je enkel \[result] opvangt. Maar het is steeds een tuple, zelfs als je enkel interesse hebt in het result.
 
-De results bevatten, net zoals bij de callback, de resultaatslijnen van je query.
+De result bevat, net zoals bij de callback, de resultaatslijnen van je query.
+
+{% hint style="success" %}
+Laat in dit geval het type maar weg. Door type inference weet je wel wat er eigenlijk staat van type.
+{% endhint %}
 
 Errorhandling dienen we bij de promise te doen via de try / catch methode want in tegenstelling tot de callback krijgen we daar geen error object terug. De promise query zal een throw doen van de error die we dus opvangen met een try / catch.
 
@@ -147,7 +151,7 @@ In veel gevallen zal je SELECT query een WHERE clause bevatten en dit kunnen we 
 async function run(myname: string) {
     try {
         const conn: Connection = await mysql.createConnection(access);
-        const[results] = await conn.query(´SELECT * FROM planet WHERE name = ${myname}´);
+        const [result] = await conn.query(´SELECT * FROM planet WHERE name = ${myname}´);
     } catch(error) {
         console.log(error);
     }
@@ -164,7 +168,7 @@ Door string interpolatie kunnen we de parameters van de clause makkelijk toevoeg
 async function run(myname: string) {
     try {
         const conn: Connection = await mysql.createConnection(access);
-        const[results] = await conn.query("SELECT * FROM planet WHERE name = ?", [myname]);
+        const [result] = await conn.query("SELECT * FROM planet WHERE name = ?", [myname]);
     } catch(error) {
         console.log(error);
     }
@@ -185,7 +189,7 @@ Voorbeeld met string interpolatie
 async function run(myname: string) {
     try {
         const conn: Connection = await mysql.createConnection(access);
-        const[results] = await conn.query(´INSERT INTO planet VALUES (${myname})´);
+        const [result] = await conn.query(´INSERT INTO planet VALUES (${myname})´);
     } catch(error) {
         console.log(error);
     }
@@ -200,7 +204,7 @@ Voorbeeld met prepared statement
 async function run(myname: string) {
     try {
         const conn: Connection = await mysql.createConnection(access);
-        const[results] = await conn.query("INSERT INTO planet VALUES (?)", [myname]);
+        const [result] = await conn.query("INSERT INTO planet VALUES (?)", [myname]);
     } catch(error) {
         console.log(error);
     }
