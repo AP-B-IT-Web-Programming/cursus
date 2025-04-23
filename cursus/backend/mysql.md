@@ -251,6 +251,7 @@ async function exit() {
     try {
         connection?.end();
         console.log("disconnected from database");
+        connection = undefined;
     }
     catch (e) {
         throw e;
