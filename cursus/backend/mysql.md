@@ -212,3 +212,66 @@ async function run(myname: string) {
 run("Mars");
 
 ```
+
+## Connectie Afsluiten
+
+Elke keer dat je `mysql2` gebruikt om verbinding te maken met een MySQL-server, opent je applicatie een connectie. Elke open connectie neemt een stukje van de serverbronnen in beslag. Als je die connecties **niet afsluit**, kunnen de volgende problemen ontstaan:
+
+* **Geheugenlekken**: openstaande connecties blijven bestaan en gebruiken geheugen, zelfs als ze niet meer nodig zijn.
+* **Connectie-limiet overschrijden**: MySQL heeft een maximumaantal gelijktijdige connecties. Niet-afgesloten connecties kunnen ervoor zorgen dat nieuwe verzoeken geen verbinding meer kunnen maken.
+* **Onvoorspelbaar gedrag**: foutmeldingen of vertragingen kunnen optreden wanneer het systeem probeert een oude of inactieve connectie te hergebruiken.
+
+Wanneer je webapplicatie wordt afgesloten, is het dus belangrijk om de connectie met de database ook af te sluiten. Hiervoor kunnen we gebruik maken van process signals.&#x20;
+
+De signalen SIGINT, SIGTERM, SIGQUIT en SIGKILL zijn signalen die aanduiden dat het process wordt afgesloten, waarbij SIGINT aangeeft dat dit komt door een actie van de gebruiker. (bv. de gebruiker gebruikt `CTRL+C` om de terminal te beeindigen)
+
+### Connection Script
+
+Wat we dus eigenlijk willen is een `connect()`  functie die een database connection teruggeeft, en tegelijk regelt dat de connectie wordt afgesloten wanneer de webapplicatie wordt afgesloten.
+
+Het volgende script definieert een functie `connect()` , waarin een connection wordt gemaakt en teruggegeven. Wanneer de gebruiker het process afsluit (`SIGINT`), dan wordt de functie `exit()` aangeroepen, waarin de connectie terug wordt afgesloten.
+
+De functie `connect()` kan zo gebruikt worden om een veilige connectie met de database te leggen.
+
+{% code title="dbconnect.ts" %}
+```typescript
+import mysql, { Connection, ConnectionOptions } from "mysql2/promise";
+
+const connOptions: ConnectionOptions = {
+    host: "localhost",
+    user: "root",
+    password: "root",
+    database: "Tasks",
+    connectionLimit: 10
+}
+
+let connection: Connection | undefined = undefined;
+
+async function exit() {
+    try {
+        connection?.end();
+        console.log("disconnected from database");
+    }
+    catch (e) {
+        throw e;
+    }
+    process.exit(0);
+}
+
+async function connect(): Promise<Connection> {
+    try {
+        if (connection)
+            return connection;
+        connection = await mysql.createConnection(connOptions);
+        process.on("SIGINT", () => exit());
+        return connection;
+    }
+    catch (e) {
+        throw e;
+    }
+}
+
+export { connect }
+```
+{% endcode %}
+
