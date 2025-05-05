@@ -28,3 +28,7 @@ Maak een nieuwe directory `labo11` aan in de root van je project.
 {% endcontent-ref %}
 
 ### Pokémon app
+
+{% content-ref url="pokemon-app.md" %}
+[pokemon-app.md](pokemon-app.md)
+{% endcontent-ref %}
