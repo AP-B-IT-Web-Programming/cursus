@@ -1,8 +1,4 @@
----
-hidden: true
----
-
-# 11. Fullstack: Forms & Express & MySQL
+# 10. Fullstack: Forms & Express & MySQL
 
 {% hint style="info" %}
 ## Theorie
