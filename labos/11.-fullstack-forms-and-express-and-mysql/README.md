@@ -17,14 +17,14 @@ Maak een nieuwe directory `labo11` aan in de root van je project.
 
 ### Reiskosten app
 
-{% content-ref url="../10.-backend-mysql-and-routing/reiskosten-server.md" %}
-[reiskosten-server.md](../10.-backend-mysql-and-routing/reiskosten-server.md)
+{% content-ref url="reiskosten-app.md" %}
+[reiskosten-app.md](reiskosten-app.md)
 {% endcontent-ref %}
 
 ### Taken app
 
-{% content-ref url="../10.-backend-mysql-and-routing/taken-server.md" %}
-[taken-server.md](../10.-backend-mysql-and-routing/taken-server.md)
+{% content-ref url="taken-app.md" %}
+[taken-app.md](taken-app.md)
 {% endcontent-ref %}
 
 ### Pokémon app
