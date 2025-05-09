@@ -94,6 +94,5 @@ CREATE TABLE party (
 ## Bonusuitdagingen
 
 * Voeg een zoekfunctie toe aan de Pokédex
-* Voeg foutafhandeling en loading-states toe
+* Voeg loading-states toe
 * Toon een toast-notificatie bij het vangen of verwijderen van een Pokémon
-* Voeg styling toe met bijvoorbeeld Tailwind of CSS-modules
