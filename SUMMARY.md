@@ -122,6 +122,7 @@
   * [Reiskosten app](labos/11.-fullstack-forms-and-express-and-mysql/reiskosten-app.md)
   * [Taken app](labos/11.-fullstack-forms-and-express-and-mysql/taken-app.md)
   * [Pokémon app](labos/11.-fullstack-forms-and-express-and-mysql/pokemon-app.md)
+  * [Pokémon app (bis)](labos/11.-fullstack-forms-and-express-and-mysql/pokemon-app-bis.md)
 * [12. Herhaling](labos/labo12/README.md)
   * [Twitter](labos/labo12/twitter.md)
   * [Word Guess](labos/labo12/word-guess.md)
