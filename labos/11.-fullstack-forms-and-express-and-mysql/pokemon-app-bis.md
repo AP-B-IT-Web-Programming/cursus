@@ -39,12 +39,12 @@ Je maakt endpoints aan om de vangstatus en party bij te houden:
 
 **Endpoints**
 
-* `GET /caught`: Geef een lijst van gevangen Pokémon (ids)
-* `POST /caught`: Vang een Pokémon (body: `{ id: number }`)
-* `DELETE /caught/:id`: Laat een Pokémon los **en verwijdert deze ook uit de party als die erin zit**
+* `GET /pokedex`: Geef een lijst van gevangen Pokémon (ids)
+* `POST /pokedex`: Vang een Pokémon (body: `{ id: number }`)
+* `DELETE /pokedex`: Laat een Pokémon los **en verwijdert deze ook uit de party als die erin zit** (body: `{ id: number }`)
 * `GET /party`: Geef de party terug (lijst van max 6 Pokémon ids)
 * `POST /party`: Voeg een Pokémon toe aan de party (body: `{ id: number }`)
-* `DELETE /party/:id`: Verwijder een Pokémon uit de party
+* `DELETE /party`: Verwijder een Pokémon uit de party (body: `{ id: number }`)
 
 ## Stappenplan
 
