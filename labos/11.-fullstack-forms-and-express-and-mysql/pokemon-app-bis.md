@@ -11,12 +11,12 @@ Je gaat een webapplicatie bouwen in twee delen:
 1. **Pokedex-overzicht**
    * Haalt gegevens op van [https://pokeapi.co](https://pokeapi.co) en toont een lijst van Pokémon.
    * Gebruikt je eigen Express-backend om te tonen welke Pokémon je gevangen hebt.&#x20;
-   * Pokémon die nog niet gevangen zijn krijgen een knop waarmee je de Pokémon kunt "vangen" (dus toevoegen aan je database met gevangen Pokémon).
-2. **Jouw Pokémon Party** – Synchroniseert met je eigen Express-backend (en MySQL-database) om bij te houden:
-   * Welke Pokémon je al gevangen hebt
-   * Welke Pokémon momenteel in je party zitten (max 6)
-
-
+     * Pokémon die nog niet gevangen zijn krijgen een knop waarmee je de Pokémon kunt "vangen" (dus toevoegen aan je database met gevangen Pokémon).
+     * Pokémon die al wel gevangen zijn krijgen een knop waarmee je de Pokémon kunt "vrijlaten" (dus verwijderen uit je database met gevangen Pokémon).
+2. **Jouw Pokémon Party** – Synchroniseert met je eigen Express-backend (en MySQL-database)
+   * Haalt op welke Pokémon momenteel in je party zitten (max 6)
+     * Pokémon die al gevangen zijn, maar nog niet in je party zitten krijgen een knop waarmee je de Pokémon kunt toevoegen aan je party.
+     * Pokémon die al gevangen zijn, en al wel in je party zitten, krijgen een knop waarmee je de Pokémon kunt verwijderen uit je party.
 
 <figure><img src="../../.gitbook/assets/pokemon-app.gif" alt=""><figcaption></figcaption></figure>
 
