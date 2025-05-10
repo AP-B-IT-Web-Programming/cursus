@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Pokémon app (bis)
 
 ## Doel van de oefening

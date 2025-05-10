@@ -13,7 +13,7 @@ Bekijk voor het labo aan te vangen eerst de volgende topics:
 
 ### Voorbereiding
 
-Maak een nieuwe directory `labo11` aan in de root van je project.
+Maak een nieuwe directory `labo10` aan in de root van je project.
 
 ### Reiskosten app
 
