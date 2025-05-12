@@ -15,6 +15,7 @@
     * [Functions](cursus/wat-is-nodejs/type-systeem/functions.md)
     * [Class](cursus/wat-is-nodejs/type-systeem/class.md)
     * [Interface](cursus/wat-is-nodejs/type-systeem/interfaces.md)
+    * [Datum](cursus/wat-is-nodejs/type-systeem/datum.md)
   * [Conditionele blok](cursus/wat-is-nodejs/conditionele-blok.md)
   * [Loops](cursus/wat-is-nodejs/loops.md)
   * [Array methods](cursus/wat-is-nodejs/array-methods.md)
