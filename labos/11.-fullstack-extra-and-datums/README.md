@@ -1,13 +1,15 @@
-# 11. Fullstack extra
+# 11. Fullstack extra & datums
 
 {% hint style="info" %}
 Herhaal nogmaals de lessen:
 
-Vite
+[Vite](../../cursus/frontend/vite.md)
 
-Express
+[Express](../../cursus/backend/wat-is-een-backend-framework/)
 
-MySQL
+[MySQL](../../cursus/backend/mysql.md)
+
+[Datum](../../cursus/wat-is-nodejs/type-systeem/datum.md)
 {% endhint %}
 
 ## Oefeningen
@@ -19,3 +21,6 @@ Maak een nieuwe directory `labo11` aan in de root van je project.
 ### Pokémon app revisited
 
 [pokemon-app-bis.md](pokemon-app-bis.md "mention")
+
+### Pokémon array
+
