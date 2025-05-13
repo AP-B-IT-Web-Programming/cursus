@@ -20,7 +20,7 @@ Maak een nieuwe directory `labo11` aan in de root van je project.
 
 ### Pokémon app revisited
 
-[pokemon-app-bis.md](pokemon-app-bis.md "mention")
+[full-stack-pokemon-app-bis.md](full-stack-pokemon-app-bis.md "mention")
 
 ### Pokémon array
 
