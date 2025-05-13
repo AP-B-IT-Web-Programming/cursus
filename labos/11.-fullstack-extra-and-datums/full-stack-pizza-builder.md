@@ -29,7 +29,7 @@ Je gaat een webapplicatie bouwen in twee delen:
   * sauzen
   * kazen
   * toppings
-* Toon elk ingredient in het juiste `<select>` element
+* Toon elk ingredient in het juiste `<select>` element.
   * Gebruik het `multiple` attribute om een multi-select te maken.
 
 ### 2. Back-end (Express + MySQL) <a href="#id-2.-back-end-express--mysql" id="id-2.-back-end-express--mysql"></a>
