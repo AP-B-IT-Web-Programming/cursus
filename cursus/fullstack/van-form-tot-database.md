@@ -58,9 +58,8 @@ formElement.addEventListener("submit", async (event) => {
   event.preventDefault(); // Voorkom standaard formulierverzending
 
   // Formuliergegevens ophalen  
-  const form = event.target;
-  const formData = new FormData(form);
-  const data: MyFormData = Object.fromEntries(formData.entries()) as MyFormData;
+  const formData = new FormData(formElement);
+  const data: MyFormData = Object.fromEntries(formData.entries()) as unknown as MyFormData;
 
   try {
     const response = await fetch("http://localhost:3000/sendData", {
