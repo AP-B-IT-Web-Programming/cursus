@@ -91,9 +91,9 @@ Als je een CORS fout tegenkomt, kan het zijn dat:
 
 
     ```javascript
-    import cors from 'cors';
+    import cors, {CorsOptions} from 'cors';
 
-    const options: cors.CorsOptions = {
+    const options: CorsOptions = {
         origin : 'http://example.com',
         methods : 'GET,POST,PUT,DELETE'
     }
