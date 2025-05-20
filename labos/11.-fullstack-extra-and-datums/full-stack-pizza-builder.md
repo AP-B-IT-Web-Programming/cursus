@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Full-Stack: Pizza Builder
 
 ## Doel van de oefening
