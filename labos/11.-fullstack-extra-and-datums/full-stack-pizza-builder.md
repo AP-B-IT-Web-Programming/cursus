@@ -30,7 +30,7 @@ Je gaat een webapplicatie bouwen in twee delen:
 
 ### 2. Back-end (Express + MySQL) <a href="#id-2.-back-end-express--mysql" id="id-2.-back-end-express--mysql"></a>
 
-Je maakt endpoints aan om de vangstatus en party bij te houden:
+Je maakt endpoints aan om pizza's terug te geven en aan te maken:
 
 **Endpoints**
 
