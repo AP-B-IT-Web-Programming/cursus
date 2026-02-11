@@ -42,7 +42,7 @@ We gaan nu in detail een aantal basis types bekijken in TypeScript en de werking
 
 ### number
 
-In TypeScript is er geen verschil tussen gehele getallen (integers) en floating point getallen zoals in andere programmeertalen (bv C#). Dus alle getallen of er nu getallen na de komma staan of niet worden uitgedrukt met het `number` data type.&#x20;
+In TypeScript is er geen verschil tussen gehele getallen (integers) en floating point getallen zoals in andere programmeertalen (bv C#). Dus alle getallen of er nu getallen na de komma staan of niet worden uitgedrukt met het `number` data type.
 
 Je kan in TypeScript een number variabele declareren als volgt:
 
@@ -54,7 +54,7 @@ Je kan allerhande operaties uitvoeren op getallen, zoals vermenigvuldiging (\*),
 
 Naast de gewone getallen die jullie allemaal al kennen heb je ook "speciale numerieke waarden" die tot dit data type behoren: `Infinity`, `-Infinity` en `NaN`
 
-*   &#x20;**Infinity** stelt het wiskundige ∞ symbool voor. Het is een speciale waarde die groter is dan alle mogelijke waarden. Als je iets van wiskunde kent dan weet je dat als je deelt door 0 dat je dan eigenlijk het getal oneindig krijgt. Dit is ook zo in TypeScript
+*   **Infinity** stelt het wiskundige ∞ symbool voor. Het is een speciale waarde die groter is dan alle mogelijke waarden. Als je iets van wiskunde kent dan weet je dat als je deelt door 0 dat je dan eigenlijk het getal oneindig krijgt. Dit is ook zo in TypeScript
 
     ```
     console.log(1/0); // Infinity
@@ -94,7 +94,7 @@ In TypeScript zijn er drie types van quotes
 
 Double en single quotes zijn "eenvoudige" quotes. Er is geen verschil tussen de twee in TypeScript. Je mag dus kiezen om single of double quotes te gebruiken. Zorg er wel voor dat je deze keuze wel over heel je project hetzelfde houdt.
 
-De derde soort quotes is een speciaal soort.  Ze laten ons toe om variabelen en expressies in strings te plaatsen door ze te omringen door `${...}`&#x20;
+De derde soort quotes is een speciaal soort. Ze laten ons toe om variabelen en expressies in strings te plaatsen door ze te omringen door `${...}`
 
 ```typescript
 let name : string = "Andie";
@@ -106,7 +106,7 @@ console.log( `Hello, ${name}!` ); // Hello, Andie!
 console.log( `the result is ${1 + 2}` ); // the result is 3
 ```
 
-Alles wat tussen de `${...}` staat wordt geëvalueerd en het resultaat wordt deel van de string.&#x20;
+Alles wat tussen de `${...}` staat wordt geëvalueerd en het resultaat wordt deel van de string.
 
 Je kan eender welke variabele omzetten van een ander datatype omzetten naar een string aan de hand van de `toString()` methode.
 
@@ -115,6 +115,35 @@ let number : number = 4;
 
 let str : string = number.toString();
 ```
+
+We kunnen verder met strings aan de slag gaan door gebruik van enkele handige functies:
+
+```typescript
+let str: string = "Hello world";
+console.log(name.length); //11
+console.log(name[0]); //H
+console.log(name.charAt(0)); //H
+```
+
+De lengte van de string vragen we op met het .length attribuut van de string.
+
+Met \[index] of charAt(index) vragen we een teken op op een bepaalde positie. Hoe er rekening mee dat de index zero based is, m.a.w. het eerste teken heeft index 0.
+
+```typescript
+let str: string = "Hello world";
+console.log(str.substring(6, 8)); //wo
+console.log(str.substring(6)); //world
+```
+
+Met de substring functie knippen we een deel uit een string. Je geeft één of twee waardes door aan de functie: beginindex (verplicht) - eindindex (optioneel). Laat je de eindindex weg, dan wordt alles genomen na de beginindex.
+
+```typescript
+let str: string = "Hello world";
+console.log(str.indexOf(r)); //8
+console.log(str.indexOf(o)); //4
+```
+
+Met indexOf bepalen we de index van een teken in de string. Merk op dat dit de éérste keer is dat je dit teken tegen komt! In bovenstaand voorbeeld komt de letter 'o' meermaals voor, de indexOf bepaalt dan de eerste keer dat je 'o' tegen komt in de string.
 
 ### boolean
 
@@ -126,7 +155,7 @@ Het type wordt vaak gebruikt om ja/nee waarden in op te slagen. `true` betekent 
 let isLightOn : boolean = true;
 ```
 
-De bovenstaande code zou een variabele kunnen voorstellen die aangeeft of het licht aan is of niet.&#x20;
+De bovenstaande code zou een variabele kunnen voorstellen die aangeeft of het licht aan is of niet.
 
 Boolean waarden kunnen ook afkomstig zijn uit het resultaat van vergelijkingen:
 
@@ -172,7 +201,7 @@ console.log(message); // undefined
 
 We hebben hier boven dus nog geen waarde toegekend aan de variabele `message`
 
-### any 
+### any
 
 Het `any` type is een speciaal type in TypeScript. Het is een type dat je kan gebruiken als je niet weet welk type een variabele zal hebben. Het is een type dat je best zo weinig mogelijk gebruikt. Het is een type dat je kan gebruiken als je nog niet weet welk type een variabele zal hebben. Het wordt vaak gebruikt als je een externe library gebruikt die je niet zelf hebt geschreven. Je weet dan niet welke types er allemaal gebruikt worden in die library. Je kan dan het `any` type gebruiken om aan te geven dat je niet weet welk type de variabele zal hebben.
 
@@ -182,18 +211,18 @@ notSure = "maybe a string instead";
 notSure = false;
 ```
 
-Je ziet dat we de variabele `notSure` eerst een getal geven, dan een string en dan een boolean. Dit is allemaal mogelijk omdat we het `any` type gebruiken. Je verliest hier wel de voordelen van TypeScript. Je kan dus best zo weinig mogelijk het `any` type gebruiken. 
+Je ziet dat we de variabele `notSure` eerst een getal geven, dan een string en dan een boolean. Dit is allemaal mogelijk omdat we het `any` type gebruiken. Je verliest hier wel de voordelen van TypeScript. Je kan dus best zo weinig mogelijk het `any` type gebruiken.
 
 ## Union types
 
 Een union type is een type dat bestaat uit meerdere types. Je kan een union type gebruiken als je een variabele wil declareren die meerdere types kan bevatten. Je kan een union type declareren door de types te scheiden met een `|` teken. Als je wil toelaten dat een variabele een string of een getal kan bevatten dan kan je dit doen door het volgende te schrijven:
- 
+
 ```typescript
 let id : number | string = 1;
 id = "123e4567-e89b-12d3-a456-426614174000";
 ```
 
-Dit wordt vaak gebruikt in combinatie met het `undefined` type. Je kan dan een variabele declareren die een bepaald type of `undefined` kan bevatten. Dit kan handig zijn als je een variabele wil declareren en deze nog niet meteen een waarde wil geven. Je kan dan het `undefined` type gebruiken om aan te geven dat de variabele nog niet is toegewezen. 
+Dit wordt vaak gebruikt in combinatie met het `undefined` type. Je kan dan een variabele declareren die een bepaald type of `undefined` kan bevatten. Dit kan handig zijn als je een variabele wil declareren en deze nog niet meteen een waarde wil geven. Je kan dan het `undefined` type gebruiken om aan te geven dat de variabele nog niet is toegewezen.
 
 ```typescript
 let id : number | undefined = undefined;
@@ -201,7 +230,7 @@ let id : number | undefined = undefined;
 
 ### String union
 
-Een string union is een speciaal type in TypeScript. Het is een type dat een aantal vaste waarden kan bevatten. Je kan een string union gebruiken als je een variabele wil declareren die een van een aantal vaste waarden kan bevatten. Je kan een string union declareren door de waarden te scheiden met een `|` teken. 
+Een string union is een speciaal type in TypeScript. Het is een type dat een aantal vaste waarden kan bevatten. Je kan een string union gebruiken als je een variabele wil declareren die een van een aantal vaste waarden kan bevatten. Je kan een string union declareren door de waarden te scheiden met een `|` teken.
 
 Als je wil toelaten dat een variabele enkel de waarden "ON", "DIMMED" en "OFF" kan bevatten dan kan je dit doen door het volgende te schrijven:
 
@@ -214,7 +243,7 @@ lightStatus = "ON"; // OK
 lightStatus = "BROKEN"; // FOUT
 ```
 
-Je kan ook dit soort types apart declareren als een `type`. Dit is handig als je deze types op meerdere plaatsen in je code wil gebruiken. 
+Je kan ook dit soort types apart declareren als een `type`. Dit is handig als je deze types op meerdere plaatsen in je code wil gebruiken.
 
 ```typescript
 type LightStatus = "ON" | "DIMMED" | "OFF";
@@ -225,7 +254,7 @@ lightStatus = "DIMMED"; // OK
 ...
 ```
 
-Je moet er wel rekening mee houden als je user input gaat gebruiken dat je deze waarden eerst controleert. Je kan dit doen door een `if` statement te gebruiken. 
+Je moet er wel rekening mee houden als je user input gaat gebruiken dat je deze waarden eerst controleert. Je kan dit doen door een `if` statement te gebruiken.
 
 Als je bijvoorbeeld
 
