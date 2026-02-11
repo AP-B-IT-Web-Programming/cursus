@@ -32,11 +32,11 @@ sudo npm install -g typescript
 
 Vervolgens zal je je wachtwoord moeten ingeven voor de globale bibliotheek geïnstalleerd wordt.
 
-## TS Node installeren
+## ~~TS Node installeren~~
 
-Zoals in de introductie uitgelegd kan je TypeScript niet rechtstreeks uitvoeren. We gebruiken hiervoor een transpiler die de TypeScript omvormt naar JavaScript en vervolgens kan uitvoeren.
+~~Zoals in de introductie uitgelegd kan je TypeScript niet rechtstreeks uitvoeren. We gebruiken hiervoor een transpiler die de TypeScript omvormt naar JavaScript en vervolgens kan uitvoeren.~~
 
-```bash
+```
 npm install -g ts-node
 ```
 
@@ -45,6 +45,20 @@ Mac gebruikers denk aan het sudo commando!
 {% hint style="info" %}
 Je kan npm install ook korter schrijven : **npm i**
 {% endhint %}
+
+{% hint style="danger" %}
+### UPDATE 2026 - TSX  als alternatief voor TS NODE
+
+De ts-node module is verouderd en wordt niet langer aangeraden te gebruiken. We stappen over op het gebruik van tsx.
+{% endhint %}
+
+### TSX installeren
+
+Zoals in de introductie uitgelegd kan je TypeScript niet rechtstreeks uitvoeren. We gebruiken hiervoor een transpiler die de TypeScript omvormt naar JavaScript en vervolgens kan uitvoeren.
+
+```bash
+npm install -g tsx
+```
 
 ### Wat als je een fout krijgt bij installatie?
 
@@ -104,11 +118,15 @@ console.log('Hello, world!');
 
 ## Uitvoeren
 
-Nu we ons programma hebben geschreven kunnen we dit uitvoeren. Dit kan je doen aan de hand van het `ts-node` commando.
+Nu we ons programma hebben geschreven kunnen we dit uitvoeren. Dit kan je doen aan de hand van het `tsx` commando.
 
 ```bash
-ts-node hello.ts
+tsx hello.ts
 ```
+
+{% hint style="danger" %}
+OPGELET gebruik géén ts-node meer
+{% endhint %}
 
 Dit commando zal je programma uitvoeren en je zal `Hello, world!` zien verschijnen in je terminal.
 
@@ -119,6 +137,6 @@ Dit commando zal je programma uitvoeren en je zal `Hello, world!` zien verschijn
 | `npm init`                   | Maakt een nieuw project aan.                                                          |
 | `tsc --init`                 | Maakt een nieuw tsconfig bestand aan. Het initialiseert een nieuw TypeScript project. |
 | `npm install -D @types/node` | Voeg de node types toe.                                                               |
-| `ts-node <naam file>.ts`     | Voert het programma uit dat je geschreven hebt in `<naam file>.ts`.                   |
+| `tsx <naam file>.ts`         | Voert het programma uit dat je geschreven hebt in `<naam file>.ts`.                   |
 
 Deze commando's zal je voor elk nieuw project moeten uitvoeren. Het is dus handig om deze te onthouden.
